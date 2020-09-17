@@ -2,17 +2,60 @@
 @using FourthCoffee.Data
 @using FourthCoffee.Models
 @inject IProductsService ProductsService
+@inject NavigationManager NavigationManager;
 
+<h1>Welcome to Fourth Coffee!</h1>
 
+<div id="featuredProduct" class="row">
+    <div class="col-sm-8">
+        <img alt="Featured Product" src="/Images/Products/@FeaturedProduct.ImageName" class="img-fluid rounded"/>
+    </div>
+    <div id="featuredProductInfo" class="col-sm-4">
+        <div id="productInfo">
+            <h2>@FeaturedProduct.Name</h2>
+            <p class="price">$@string.Format("{0:f}", @FeaturedProduct.Price)</p>
+            <p class="description">@FeaturedProduct.Description</p>
+        </div>
+        <div id="callToAction">
+            <button class="btn btn-sm btn-dark order-button float-right" @onclick="@(() => NavigateToComponent(FeaturedProduct))">
+                Order Now
+            </button>
+        </div>
+    </div>
+</div>
+<div id="productsWrapper" class="row">
+    @foreach (var product in Products) {
+        Product p = product;
+        <div class="col-sm-3">
+            <a asp-page="/order" asp-route-id="@product.Id" title="Order @product.Name">
+                <div class="productInfo">
+                    <h3>@product.Name</h3>
+                    <img class="product-image img-fluid img-thumbnail" src="Images/Products/Thumbnails/@product.ImageName" alt="Image of @product.Name"/>
+                    <p class="description">@product.Description</p>
+                </div>
+            </a>
+            <div >
+                <p class="price float-left">$@string.Format("{0:f}", product.Price)</p>
+                <button class="btn btn-sm btn-dark order-button float-right" @onclick="@(() => NavigateToComponent(p))">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    }
+</div>
 
 @code {
 
-    public IList<Product> Products { get; set; } = new List<Product>();
+    public IList<Product> Products { get; set; }
     public Product FeaturedProduct { get; set; }
 
     protected override async Task OnInitializedAsync() {
         Products = ProductsService.Products;
         FeaturedProduct = Products.ElementAt(new Random().Next(Products.Count));
+    }
+
+    private void NavigateToComponent(Product p) {
+        NavigationManager.NavigateTo("order/" + p.Id);
     }
 
 }

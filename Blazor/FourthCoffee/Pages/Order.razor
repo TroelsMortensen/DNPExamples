@@ -1,0 +1,23 @@
+@page "/order"
+@page "/order/{Id:int}"
+
+@using FourthCoffee.Data
+@using FourthCoffee.Models
+@inject IProductsService ProductsService
+
+<h3>order</h3>
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    public Product Product { get; set; }
+
+    protected override async Task OnInitializedAsync() {
+        if (Id != 0) {
+            Product = ProductsService.Products.First(p => p.Id == Id);
+        }
+    }
+
+}
