@@ -3,12 +3,67 @@
 
 @using FourthCoffee.Data
 @using FourthCoffee.Models
+@using System.ComponentModel.DataAnnotations
 @inject IProductsService ProductsService
 
-<h3>Order</h3>
-<p>
-Showing info about @Product.Name
-</p>
+<ol id="orderProcess" xmlns="http://www.w3.org/1999/html">
+    <li><span class="step-number">1</span>Choose Item</li>
+    <li class="current"><span class="step-number">2</span>Details &amp; Submit</li>
+    <li><span class="step-number">3</span>Receipt</li>
+</ol>
+<h1>Place Your Order: @Product.Name</h1>
+
+<EditForm Model="@shippingValidationModel" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+    <div class="row">
+        <div class="col-3">
+            <img src="Images/Products/Thumbnails/@Product.ImageName" class="img-fluid img-thumbnail" alt="Image of @Product.Name"/>
+        </div>
+        <div class="col-9">
+            <DataAnnotationsValidator/>
+            <ValidationSummary/>
+            <ul class="orderPageList" data-role="listview">
+                <li>
+                    <div>
+                        <p class="description">@Product.Description</p>
+                    </div>
+                </li>
+                <li class="email">
+                    <div class="form-group">
+                        Email address:<br/>
+                        <InputText id="email" @bind-Value="shippingValidationModel.OrderEmail"/>
+                        <!--<label asp-for="OrderEmail"></label>
+                        <input asp-for="OrderEmail" class="form-control form-control-sm" />                
+                        <span asp-validation-for="OrderEmail"></span>-->
+                    </div>
+                </li>
+                 <li class="shipping">
+                     <div class="form-group">
+                         Shipping adress:<br/>
+                         <InputTextArea id="shipping" rows="4" class="form-control form-control-sm" @bind-Value="shippingValidationModel.OrderShipping"/>
+                         <!-- <label asp-for="OrderShipping"></label>
+                         <textarea rows="4" asp-for="OrderShipping" class="form-control form-control-sm"></textarea>               
+                         <span asp-validation-for="OrderShipping"></span>-->
+                     </div>
+                </li>
+                <!--<li class="quantity">
+                    <div class="form-group row">
+                        <label asp-for="OrderQuantity" class="col-1 col-form-label"></label>
+                        <input asp-for="OrderQuantity" class="form-control form-control-sm"/>
+                        x
+                        <span class="order-calc" id="orderPrice">@Product.Price.ToString("f")</span>
+                        =
+                        <span class="order-calc" id="orderTotal">@Product.Price.ToString("f")</span>
+                        <span asp-validation-for="OrderQuantity"></span>
+                    </div>
+                </li>-->
+            </ul>
+            <p class="actions">
+                <button class="btn btn-danger order-button" type="submit">Place Order</button>
+            </p>
+        </div>
+    </div>
+</EditForm>
+
 
 @code {
 
@@ -17,10 +72,32 @@ Showing info about @Product.Name
 
     public Product Product { get; set; }
 
+
+    private ShippingValidationModel shippingValidationModel = new ShippingValidationModel();
+
     protected override async Task OnInitializedAsync() {
         if (Id != 0) {
             Product = ProductsService.Products.First(p => p.Id == Id);
         }
+    }
+
+    private void HandleInvalidSubmit() {
+        Console.WriteLine("Invalid");
+    }
+
+    private void HandleValidSubmit() {
+        Console.WriteLine("Valid");
+    }
+
+    private class ShippingValidationModel {
+        [EmailAddress, Required, Display(Name = "Email Address")]
+        public string OrderEmail { get; set; }
+
+        [Required(ErrorMessage = "Please supply a shipping address"), Display(Name = "Shipping Address")]
+        public string OrderShipping { get; set; }
+
+        [Display(Name = "Quantity")]
+        public int OrderQuantity { get; set; } = 1;
     }
 
 }
