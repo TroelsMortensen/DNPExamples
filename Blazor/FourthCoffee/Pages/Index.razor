@@ -17,15 +17,14 @@
             <p class="description">@FeaturedProduct.Description</p>
         </div>
         <div id="callToAction">
-            <button class="btn btn-sm btn-dark order-button float-right" @onclick="@(() => NavigateToComponent(FeaturedProduct))">
-                Order Now
-            </button>
+            <a href="order/@FeaturedProduct.Id">
+                <button class="btn btn-sm btn-dark order-button float-right">Order Now</button>
+            </a>
         </div>
     </div>
 </div>
 <div id="productsWrapper" class="row">
     @foreach (var product in Products) {
-        Product p = product;
         <div class="col-sm-3">
             <a asp-page="/order" asp-route-id="@product.Id" title="Order @product.Name">
                 <div class="productInfo">
@@ -36,7 +35,7 @@
             </a>
             <div >
                 <p class="price float-left">$@string.Format("{0:f}", product.Price)</p>
-                <button class="btn btn-sm btn-dark order-button float-right" @onclick="@(() => NavigateToComponent(p))">
+                <button class="btn btn-sm btn-dark order-button float-right" @onclick="@(() => NavigateToComponent(product))">
                     Order Now
                 </button>
             </div>
