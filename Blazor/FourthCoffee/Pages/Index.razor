@@ -1,7 +1,18 @@
 ﻿@page "/"
+@using FourthCoffee.Data
+@using FourthCoffee.Models
+@inject IProductsService ProductsService
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+@code {
+
+    public IList<Product> Products { get; set; } = new List<Product>();
+    public Product FeaturedProduct { get; set; }
+
+    protected override async Task OnInitializedAsync() {
+        Products = ProductsService.Products;
+        FeaturedProduct = Products.ElementAt(new Random().Next(Products.Count));
+    }
+
+}

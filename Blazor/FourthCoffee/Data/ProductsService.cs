@@ -6,7 +6,7 @@ using FourthCoffee.Models;
 
 namespace FourthCoffee.Data {
 public class ProductsService : IProductsService {
-    public ICollection<Product> Products { get; private set; }
+    public IList<Product> Products { get; private set; }
 
     private string productsFile = "Products.json";
 
