@@ -27,35 +27,29 @@
                         <p class="description">@Product.Description</p>
                     </div>
                 </li>
-                <li class="email">
+                <li>
                     <div class="form-group">
                         Email address:<br/>
-                        <InputText id="email" @bind-Value="shippingValidationModel.OrderEmail"/>
-                        <!--<label asp-for="OrderEmail"></label>
-                        <input asp-for="OrderEmail" class="form-control form-control-sm" />                
-                        <span asp-validation-for="OrderEmail"></span>-->
+                        <InputText @bind-Value="shippingValidationModel.OrderEmail"/>
                     </div>
                 </li>
-                 <li class="shipping">
-                     <div class="form-group">
-                         Shipping adress:<br/>
-                         <InputTextArea id="shipping" rows="4" class="form-control form-control-sm" @bind-Value="shippingValidationModel.OrderShipping"/>
-                         <!-- <label asp-for="OrderShipping"></label>
-                         <textarea rows="4" asp-for="OrderShipping" class="form-control form-control-sm"></textarea>               
-                         <span asp-validation-for="OrderShipping"></span>-->
-                     </div>
+                <li>
+                    <div class="form-group">
+                        Shipping adress:<br/>
+                        <InputTextArea rows="4" class="form-control form-control-sm" @bind-Value="shippingValidationModel.OrderShipping"/>
+                    </div>
                 </li>
-                <!--<li class="quantity">
-                    <div class="form-group row">
-                        <label asp-for="OrderQuantity" class="col-1 col-form-label"></label>
-                        <input asp-for="OrderQuantity" class="form-control form-control-sm"/>
+                <li>
+                    <div class="form-group">
+                        Quantity:
+                        <InputNumber @bind-Value="shippingValidationModel.OrderQuantity"/>
                         x
                         <span class="order-calc" id="orderPrice">@Product.Price.ToString("f")</span>
                         =
-                        <span class="order-calc" id="orderTotal">@Product.Price.ToString("f")</span>
+                        <span class="order-calc" id="orderTotal">@((shippingValidationModel.OrderQuantity * Product.Price).ToString("f"))</span>
                         <span asp-validation-for="OrderQuantity"></span>
                     </div>
-                </li>-->
+                </li>
             </ul>
             <p class="actions">
                 <button class="btn btn-danger order-button" type="submit">Place Order</button>
@@ -97,6 +91,7 @@
         public string OrderShipping { get; set; }
 
         [Display(Name = "Quantity")]
+        [Range(1,10)]
         public int OrderQuantity { get; set; } = 1;
     }
 
