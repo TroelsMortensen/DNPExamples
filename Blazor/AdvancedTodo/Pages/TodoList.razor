@@ -1,0 +1,45 @@
+@page "/Todos"
+@using AdvancedTodo.Data
+@using AdvancedTodo.Models
+@inject ITodosService TodosService
+
+<h1>Todo list</h1>
+@if (todos == null) {
+    <p>
+        <em>Loading...</em>
+    </p>
+} else if (!todos.Any()) {
+    <p>
+        <em>No ToDo items exist. Please add some.</em>
+    </p>
+} else {
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Todo ID</th>
+            <th>Title</th>
+            <th>Completed?</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in todos) {
+            <tr>
+                <td>@item.UserId</td>
+                <td>@item.TodoId</td>
+                <td>@item.Title</td>
+                <td>@item.IsCompleted</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IList<Todo> todos;
+
+    protected override async Task OnInitializedAsync() {
+        todos = TodosService.GetTodos();
+    }
+
+}
