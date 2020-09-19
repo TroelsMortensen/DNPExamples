@@ -5,6 +5,7 @@
 @using FourthCoffee.Models
 @using System.ComponentModel.DataAnnotations
 @inject IProductsService ProductsService
+@inject NavigationManager NavigationManager
 
 <ol id="orderProcess" xmlns="http://www.w3.org/1999/html">
     <li><span class="step-number">1</span>Choose Item</li>
@@ -80,7 +81,7 @@
     }
 
     private void HandleValidSubmit() {
-        Console.WriteLine("Valid");
+        NavigationManager.NavigateTo("/ordersuccess");
     }
 
     private class ShippingValidationModel {
