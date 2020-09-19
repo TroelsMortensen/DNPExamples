@@ -20,18 +20,9 @@ public class TodoService : ITodosService {
         }
     }
 
-
     public IList<Todo> GetTodos() {
         List<Todo> tmp = new List<Todo>(todos);
         return tmp;
-    }
-
-    public Todo GetTodoById(int id) {
-        return todos.FirstOrDefault(t => t.TodoId == id);
-    }
-
-    public IList<Todo> GetTodosByUserId(int id) {
-        return todos.Where(t => t.UserId == id).ToList();
     }
 
     public void AddTodo(Todo todo) {
