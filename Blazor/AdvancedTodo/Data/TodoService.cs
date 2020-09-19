@@ -13,8 +13,7 @@ public class TodoService : ITodosService {
     public TodoService() {
         if (!File.Exists(todoFile)) {
             Seed();
-            string productsAsJson = JsonSerializer.Serialize(todos);
-            File.WriteAllText(todoFile, productsAsJson);
+            WriteTodosToFile();
         } else {
             string content = File.ReadAllText(todoFile);
             todos = JsonSerializer.Deserialize<List<Todo>>(content);
@@ -39,10 +38,26 @@ public class TodoService : ITodosService {
         int max = todos.Max(todo => todo.TodoId);
         todo.TodoId = (++max);
         todos.Add(todo);
+        WriteTodosToFile();
+    }
+
+    public void RemoveTodo(int todoId) {
+        Todo toRemove = todos.First(t => t.TodoId == todoId);
+        todos.Remove(toRemove);
+        WriteTodosToFile();
+    }
+
+    public void Update(Todo todo) {
+        Todo toUpdate = todos.First(t => t.TodoId == todo.TodoId);
+        toUpdate.IsCompleted = todo.IsCompleted;
+        WriteTodosToFile();
+    }
+
+    private void WriteTodosToFile() {
         string productsAsJson = JsonSerializer.Serialize(todos);
         File.WriteAllText(todoFile, productsAsJson);
     }
-    
+
     private void Seed() {
         Todo[] ts = {
             new Todo {
