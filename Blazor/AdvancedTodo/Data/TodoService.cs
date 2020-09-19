@@ -36,6 +36,8 @@ public class TodoService : ITodosService {
     }
 
     public void AddTodo(Todo todo) {
+        int max = todos.Max(todo => todo.TodoId);
+        todo.TodoId = (++max);
         todos.Add(todo);
         string productsAsJson = JsonSerializer.Serialize(todos);
         File.WriteAllText(todoFile, productsAsJson);
