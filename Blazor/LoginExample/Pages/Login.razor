@@ -39,7 +39,6 @@
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(username, password);
             username = "";
             password = "";
-            NavigationManager.NavigateTo("/");
         } catch (Exception e) {
             errorMessage = e.Message;
         }
