@@ -1,0 +1,31 @@
+@page "/Animation"
+@inject IJSRuntime JsRuntime
+@implements IDisposable
+
+<h3>Animation</h3>
+@Time
+
+@code {
+
+    private float Time;
+
+    protected async override Task OnInitializedAsync() {
+        Console.WriteLine("Init");
+        await base.OnInitializedAsync();
+        await JsRuntime.InvokeAsync<object>("initGame", DotNetObjectReference.Create(this));
+    }
+
+    
+    [JSInvokable]
+    public async ValueTask GameLoop(float timeStamp) {
+        Time = timeStamp;
+        Console.WriteLine("here");
+        StateHasChanged();
+    }
+
+    public async void Dispose() {
+        Console.WriteLine("Stop");
+        await JsRuntime.InvokeAsync<object>("stop", DotNetObjectReference.Create(this));
+    }
+
+}
