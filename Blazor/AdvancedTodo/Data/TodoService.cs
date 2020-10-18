@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using System.Threading.Tasks;
 using AdvancedTodo.Models;
 
 namespace AdvancedTodo.Data {
@@ -20,25 +21,25 @@ public class TodoService : ITodosService {
         }
     }
 
-    public IList<Todo> GetTodos() {
+    public async Task<IList<Todo>> GetTodosAsync() {
         List<Todo> tmp = new List<Todo>(todos);
         return tmp;
     }
 
-    public void AddTodo(Todo todo) {
+    public async Task AddTodoAsync(Todo todo) {
         int max = todos.Max(todo => todo.TodoId);
         todo.TodoId = (++max);
         todos.Add(todo);
         WriteTodosToFile();
     }
 
-    public void RemoveTodo(int todoId) {
+    public async Task RemoveTodoAsync(int todoId) {
         Todo toRemove = todos.First(t => t.TodoId == todoId);
         todos.Remove(toRemove);
         WriteTodosToFile();
     }
 
-    public void Update(Todo todo) {
+    public async Task UpdateAsync(Todo todo) {
         Todo toUpdate = todos.First(t => t.TodoId == todo.TodoId);
         toUpdate.IsCompleted = todo.IsCompleted;
         WriteTodosToFile();
@@ -46,6 +47,7 @@ public class TodoService : ITodosService {
 
     private void WriteTodosToFile() {
         string productsAsJson = JsonSerializer.Serialize(todos);
+        
         File.WriteAllText(todoFile, productsAsJson);
     }
 

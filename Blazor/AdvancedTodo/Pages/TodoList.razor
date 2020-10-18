@@ -85,19 +85,19 @@
     }
 
     protected override async Task OnInitializedAsync() {
-        allTodos = TodosService.GetTodos();
+        allTodos = await TodosService.GetTodosAsync();
         todosToShow = allTodos;
     }
 
-    private void RemoveTodo(int todoId) {
+    private async Task RemoveTodo(int todoId) {
         Todo todoToRemove = todosToShow.First(t => t.TodoId == todoId);
-        TodosService.RemoveTodo(todoId);
+        await TodosService.RemoveTodoAsync(todoId);
         todosToShow.Remove(todoToRemove);
     }
 
-    private void CompletedChange(ChangeEventArgs evt, Todo todo) {
+    private async Task CompletedChange(ChangeEventArgs evt, Todo todo) {
         todo.IsCompleted = (bool) evt.Value;
-        TodosService.Update(todo);
+        await TodosService.UpdateAsync(todo);
     }
 
 }

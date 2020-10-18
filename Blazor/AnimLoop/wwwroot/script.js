@@ -7,8 +7,8 @@ function gameLoop(timeStamp) {
     }
 }
 
-window.initGame = (instance) => {
-    window.fps = 1000 / 5;
+window.initGame = (instance, perSecond) => {
+    window.fps = 1000 / perSecond;
     window.running = true;
     window.theInstance = instance;
     window.requestAnimationFrame(gameLoop);

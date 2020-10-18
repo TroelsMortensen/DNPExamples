@@ -12,7 +12,7 @@
     protected async override Task OnInitializedAsync() {
         Console.WriteLine("Init");
         await base.OnInitializedAsync();
-        await JsRuntime.InvokeAsync<object>("initGame", DotNetObjectReference.Create(this));
+        await JsRuntime.InvokeAsync<object>("initGame", DotNetObjectReference.Create(this), 5);
     }
 
     

@@ -6,7 +6,7 @@
 
 <h3>AddTodo</h3>
 
-<EditForm Model="@newTodoItem" OnValidSubmit="@AddNewTodo">
+<EditForm Model="@newTodoItem" OnValidSubmit="@AddNewTodoAsync">
     <DataAnnotationsValidator/>
     <ValidationSummary/>
     <div class="form-group">
@@ -25,8 +25,8 @@
 @code {
     private Todo newTodoItem = new Todo();
 
-    private void AddNewTodo() {
-        TodosService.AddTodo(newTodoItem);
+    private async Task AddNewTodoAsync() {
+        await TodosService.AddTodoAsync(newTodoItem);
         NavigationManager.NavigateTo("/Todos");
     }
 
