@@ -11,16 +11,19 @@ public class CloudTodoService : ITodosService {
 
     private string uri = "https://localhost:5003";
     private string uri1 = "http://jsonplaceholder.typicode.com";
-    
+    private readonly HttpClient client;
+
+    public CloudTodoService() {
+        client = new HttpClient();
+    }
+
     public async Task<IList<Todo>> GetTodosAsync() {
-        HttpClient client = new HttpClient();
         string message = await client.GetStringAsync(uri+"/todos");
         List<Todo> result = JsonSerializer.Deserialize<List<Todo>>(message);
         return result;
     }
 
     public async Task AddTodoAsync(Todo todo) {
-        HttpClient client = new HttpClient();
         string todoAsJson = JsonSerializer.Serialize(todo);
         HttpContent content = new StringContent(todoAsJson,
             Encoding.UTF8,
@@ -29,12 +32,10 @@ public class CloudTodoService : ITodosService {
     }
 
     public async Task RemoveTodoAsync(int todoId) {
-        HttpClient client = new HttpClient();
         await client.DeleteAsync($"{uri}/todos/{todoId}");
     }
 
     public async Task UpdateAsync(Todo todo) {
-        HttpClient client = new HttpClient();
         string todoAsJson = JsonSerializer.Serialize(todo);
         HttpContent content = new StringContent(todoAsJson,
             Encoding.UTF8,
