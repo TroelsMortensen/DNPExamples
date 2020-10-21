@@ -17,7 +17,8 @@ public class TodosController : ControllerBase {
     }
 
     [HttpGet]
-    public async Task<ActionResult<IList<Todo>>> GetTodos() {
+    public async Task<ActionResult<IList<Todo>>> 
+        GetTodos([FromQuery] int? userId, [FromQuery] bool? isCompleted) {
         try {
             IList<Todo> todos = await todosService.GetTodosAsync();
             return Ok(todos);
@@ -29,7 +30,7 @@ public class TodosController : ControllerBase {
 
     [HttpDelete]
     [Route("{id:int}")]
-    public async Task<ActionResult> DeleteTodo(int id) {
+    public async Task<ActionResult> DeleteTodo([FromRoute] int id) {
         try {
             await todosService.RemoveTodoAsync(id);
             return Ok();
@@ -43,7 +44,7 @@ public class TodosController : ControllerBase {
     public async Task<ActionResult<Todo>> AddTodo([FromBody] Todo todo) {
         try {
             Todo added = await todosService.AddTodoAsync(todo);
-            return Ok(added); // return newly added to-do, to get the auto generated id
+            return Created($"/{added.TodoId}",added); // return newly added to-do, to get the auto generated id
         } catch (Exception e) {
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
