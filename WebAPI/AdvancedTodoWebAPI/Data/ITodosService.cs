@@ -4,9 +4,9 @@ using AdvancedTodo.Models;
 
 namespace AdvancedTodo.Data {
 public interface ITodosService {
-    IList<Todo> GetTodos();
-    void   AddTodo(Todo todo);
-    void   RemoveTodo(int todoId);
-    void   Update(Todo todo);
+    Task<IList<Todo>> GetTodosAsync();
+    Task<Todo>   AddTodoAsync(Todo todo);
+    Task   RemoveTodoAsync(int todoId);
+    Task   UpdateAsync(Todo todo);
 }
 }

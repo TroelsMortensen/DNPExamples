@@ -25,6 +25,7 @@ public class Startup {
         services.AddServerSideBlazor();
         services.AddSingleton<WeatherForecastService>();
         services.AddScoped<IUserService, InMemoryUserService>();
+        
         services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 
         services.AddAuthorization(options => {
