@@ -9,8 +9,8 @@ using AdvancedTodo.Models;
 namespace AdvancedTodo.Data {
 public class CloudTodoService : ITodosService {
 
-    private string uri = "https://localhost:5003";
-    private string uri1 = "http://jsonplaceholder.typicode.com";
+    private string uri1 = "https://localhost:5003";
+    private string uri = "http://jsonplaceholder.typicode.com";
     private readonly HttpClient client;
 
     public CloudTodoService() {
@@ -18,7 +18,8 @@ public class CloudTodoService : ITodosService {
     }
 
     public async Task<IList<Todo>> GetTodosAsync() {
-        string message = await client.GetStringAsync(uri+"/todos");
+        Task<string> stringAsync = client.GetStringAsync(uri+"/todos");
+        string message = await stringAsync;
         List<Todo> result = JsonSerializer.Deserialize<List<Todo>>(message);
         return result;
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -8,8 +9,33 @@ namespace TodoClient {
 class Program {
     
     static async Task Main(string[] args) {
-        string result = await new Program().PostData();
-        Console.WriteLine(result);
+        //string result = await new Program().PostData();
+       /* IList<Todo> todosAsync = await new Program().GetTodosAsync();
+        foreach (Todo todo in todosAsync) {
+
+            Console.WriteLine(todo);
+        }*/
+
+       Task data = new Program().GetData();
+       await data;
+
+       //Console.WriteLine(result);
+    }
+
+    private async Task GetData() {
+        HttpClient client = new HttpClient();
+        string stringAsync = await client.GetStringAsync("https://jsonplaceholder.typicode.com/todos");
+        Console.WriteLine(stringAsync);
+    }
+    
+    private string uri = "http://jsonplaceholder.typicode.com";
+
+    public async Task<IList<Todo>> GetTodosAsync() {
+        HttpClient client = new HttpClient();
+        Task<string> stringAsync = client.GetStringAsync(uri+"/todos");
+        string message = await stringAsync;
+        List<Todo> result = JsonSerializer.Deserialize<List<Todo>>(message);
+        return result;
     }
 
     private async Task<string> PostData() {
