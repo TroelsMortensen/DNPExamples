@@ -42,6 +42,10 @@ public class TodosController : ControllerBase {
 
     [HttpPost]
     public async Task<ActionResult<Todo>> AddTodo([FromBody] Todo todo) {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
         try {
             Todo added = await todosService.AddTodoAsync(todo);
             return Created($"/{added.TodoId}",added); // return newly added to-do, to get the auto generated id

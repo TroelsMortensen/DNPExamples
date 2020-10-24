@@ -28,13 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Committing solution file">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Models/Todo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Models/Todo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Blazor/DefaultProjectTemplate/Shared/MainLayout.razor" />
         <option value="$PROJECT_DIR$/Blazor/DefaultProjectTemplate/Startup.cs" />
         <option value="$PROJECT_DIR$/Blazor/DefaultBlazorApp/Shared/NavMenu.razor" />
         <option value="$PROJECT_DIR$/Blazor/DefaultBlazorApp/Pages/FetchData.razor" />
@@ -107,9 +103,10 @@
         <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/ITodosService.cs" />
         <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/TodoService.cs" />
         <option value="$PROJECT_DIR$/Blazor/LoginExample/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" />
         <option value="$PROJECT_DIR$/REST/TodoClient/Program.cs" />
+        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" />
+        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Models/Todo.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +125,8 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.TodoClient">
     <configuration name="AdvancedTodoWebAPI" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -732,6 +730,8 @@
       <workItem from="1602835024996" duration="15068000" />
       <workItem from="1603090213620" duration="5565000" />
       <workItem from="1603262672391" duration="18491000" />
+      <workItem from="1603377329192" duration="297000" />
+      <workItem from="1603543519629" duration="253000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>
@@ -1081,8 +1081,8 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2512" y="210" key="Github.UntrackedFilesDialog/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600268381084" />
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1603353792175">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="139" key="GridCell.Tab.0.bottom" timestamp="1603377628668">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222012" />
     <state width="1637" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276140378" />
@@ -1091,8 +1091,9 @@
     <state width="1877" height="168" key="GridCell.Tab.0.bottom/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600321070515" />
     <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@3840.0.1920.1040" timestamp="1601014387261" />
     <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603353792175" />
-    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1603353792174">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
+    <state width="1637" height="139" key="GridCell.Tab.0.center" timestamp="1603377628668">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
     <state width="1637" height="232" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276140377" />
@@ -1101,8 +1102,9 @@
     <state width="1877" height="168" key="GridCell.Tab.0.center/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600321070514" />
     <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@3840.0.1920.1040" timestamp="1601014387260" />
     <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603353792174" />
-    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1603353792174">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="139" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
+    <state width="1637" height="139" key="GridCell.Tab.0.left" timestamp="1603377628668">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
     <state width="1637" height="232" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276140377" />
@@ -1111,8 +1113,9 @@
     <state width="1877" height="168" key="GridCell.Tab.0.left/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600321070514" />
     <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@3840.0.1920.1040" timestamp="1601014387260" />
     <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603353792174" />
-    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1603353792175">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1637" height="139" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
+    <state width="1637" height="139" key="GridCell.Tab.0.right" timestamp="1603377628668">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
     <state width="1637" height="232" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276140377" />
@@ -1121,6 +1124,7 @@
     <state width="1877" height="168" key="GridCell.Tab.0.right/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600321070515" />
     <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1280.680/3840.0.1920.1040/1920.0.1920.1040@3840.0.1920.1040" timestamp="1601014387260" />
     <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603353792175" />
+    <state width="1637" height="139" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
     <state width="1637" height="363" key="GridCell.Tab.1.bottom" timestamp="1600757399958">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
@@ -1206,11 +1210,12 @@
     </state>
     <state x="368" y="51" key="RollbackChangesDialog/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603097723636" />
     <state x="431" y="51" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1602143475768" />
-    <state x="260" y="0" key="SettingsEditor" timestamp="1603100706327">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2078" y="230" key="SettingsEditor" timestamp="1603377513591">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2261" y="149" key="SettingsEditor/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1599134238833" />
     <state x="260" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603100706327" />
+    <state x="2078" y="230" key="SettingsEditor/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377513591" />
     <state x="2012" y="92" width="1496" height="826" key="VCS.FileHistoryDialog" timestamp="1603275402435">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>

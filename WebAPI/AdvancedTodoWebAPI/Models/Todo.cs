@@ -1,10 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
 
 namespace AdvancedTodo.Models {
 public class Todo {
     [Required]
-    [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
+    [NotNull, Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
     [JsonPropertyName("userId")]
     public int UserId { get; set; }
     
