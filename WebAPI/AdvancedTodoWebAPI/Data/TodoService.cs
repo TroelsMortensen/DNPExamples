@@ -41,11 +41,12 @@ public class TodoService : ITodosService {
         WriteTodosToFile();
     }
 
-    public async Task UpdateAsync(Todo todo) {
+    public async Task<Todo> UpdateAsync(Todo todo) {
         Todo toUpdate = todos.FirstOrDefault(t => t.TodoId == todo.TodoId);
         if(toUpdate == null) throw new Exception($"Did not find todo with id: {todo.TodoId}");
         toUpdate.IsCompleted = todo.IsCompleted;
         WriteTodosToFile();
+        return toUpdate;
     }
 
     private void WriteTodosToFile() {

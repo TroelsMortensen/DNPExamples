@@ -7,6 +7,6 @@ public interface ITodosService {
     Task<IList<Todo>> GetTodosAsync();
     Task<Todo>   AddTodoAsync(Todo todo);
     Task   RemoveTodoAsync(int todoId);
-    Task   UpdateAsync(Todo todo);
+    Task<Todo>   UpdateAsync(Todo todo);
 }
 }

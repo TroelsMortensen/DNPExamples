@@ -14,6 +14,7 @@ public class CloudTodoService : ITodosService {
     private readonly HttpClient client;
 
     public CloudTodoService() {
+        
         client = new HttpClient();
     }
 

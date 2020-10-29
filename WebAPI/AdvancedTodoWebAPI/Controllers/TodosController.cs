@@ -59,8 +59,8 @@ public class TodosController : ControllerBase {
     [Route("{id:int}")]
     public async Task<ActionResult<Todo>> UpdateTodo([FromBody] Todo todo) {
         try {
-            await todosService.UpdateAsync(todo);
-            return Ok(); 
+            Todo updatedTodo = await todosService.UpdateAsync(todo);
+            return Ok(updatedTodo); 
         } catch (Exception e) {
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
