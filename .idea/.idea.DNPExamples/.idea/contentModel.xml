@@ -657,7 +657,13 @@
           </e>
           <e p="Data" t="Include">
             <e p="ITodosService.cs" t="Include" />
+            <e p="SqliteTodoService.cs" t="Include" />
             <e p="TodoService.cs" t="Include" />
+          </e>
+          <e p="Migrations" t="Include">
+            <e p="20201031161359_InitialCreate.cs" t="Include" />
+            <e p="20201031161359_InitialCreate.Designer.cs" t="Include" />
+            <e p="TodoContextModelSnapshot.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
             <e p="Todo.cs" t="Include" />
@@ -669,11 +675,17 @@
               </e>
             </e>
           </e>
+          <e p="Persistence" t="Include">
+            <e p="TodoContext.cs" t="Include" />
+          </e>
           <e p="Program.cs" t="Include" />
           <e p="Properties" t="Include">
             <e p="launchSettings.json" t="Include" />
           </e>
           <e p="Startup.cs" t="Include" />
+          <e p="Todos.db" t="Include" />
+          <e p="Todos.db-shm" t="Include" />
+          <e p="Todos.db-wal" t="Include" />
           <e p="WeatherForecast.cs" t="Include" />
         </e>
       </e>

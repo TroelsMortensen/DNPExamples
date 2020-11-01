@@ -9,8 +9,8 @@ using AdvancedTodo.Models;
 namespace AdvancedTodo.Data {
 public class CloudTodoService : ITodosService {
 
-    private string uri1 = "https://localhost:5003";
-    private string uri = "http://jsonplaceholder.typicode.com";
+    private string uri = "https://localhost:5003";
+    // private string uri = "http://jsonplaceholder.typicode.com";
     private readonly HttpClient client;
 
     public CloudTodoService() {
