@@ -1,12 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
-using AdvancedTodoWebAPI.Models;
+using AdvancedTodoWithWebClientAndLogin.Models;
 
-namespace AdvancedTodoWebAPI.Data {
+namespace AdvancedTodoWithWebClientAndLogin.Data {
 public class TodoService : ITodosService {
 
     private string todoFile = "todos.json";
@@ -27,12 +26,11 @@ public class TodoService : ITodosService {
         return tmp;
     }
 
-    public async Task<Todo> AddTodoAsync(Todo todo) {
+    public async Task AddTodoAsync(Todo todo) {
         int max = todos.Max(todo => todo.TodoId);
         todo.TodoId = (++max);
         todos.Add(todo);
         WriteTodosToFile();
-        return todo;
     }
 
     public async Task RemoveTodoAsync(int todoId) {
@@ -41,12 +39,10 @@ public class TodoService : ITodosService {
         WriteTodosToFile();
     }
 
-    public async Task<Todo> UpdateAsync(Todo todo) {
-        Todo toUpdate = todos.FirstOrDefault(t => t.TodoId == todo.TodoId);
-        if(toUpdate == null) throw new Exception($"Did not find todo with id: {todo.TodoId}");
+    public async Task UpdateAsync(Todo todo) {
+        Todo toUpdate = todos.First(t => t.TodoId == todo.TodoId);
         toUpdate.IsCompleted = todo.IsCompleted;
         WriteTodosToFile();
-        return toUpdate;
     }
 
     private void WriteTodosToFile() {

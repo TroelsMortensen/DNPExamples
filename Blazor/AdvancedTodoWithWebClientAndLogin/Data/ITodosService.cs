@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AdvancedTodoWebAPI.Models;
+using AdvancedTodoWithWebClientAndLogin.Models;
 
-namespace AdvancedTodoWebAPI.Data {
+namespace AdvancedTodoWithWebClientAndLogin.Data {
 public interface ITodosService {
     Task<IList<Todo>> GetTodosAsync();
-    Task<Todo>   AddTodoAsync(Todo todo);
+    Task   AddTodoAsync(Todo todo);
     Task   RemoveTodoAsync(int todoId);
-    Task<Todo>   UpdateAsync(Todo todo);
+    Task   UpdateAsync(Todo todo);
 }
 }

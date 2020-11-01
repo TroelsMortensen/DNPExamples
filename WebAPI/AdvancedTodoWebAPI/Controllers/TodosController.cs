@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AdvancedTodo.Data;
-using AdvancedTodo.Models;
+using AdvancedTodoWebAPI.Data;
+using AdvancedTodoWebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdvancedTodoWebAPI.Controllers {

@@ -138,6 +138,81 @@
             <e p="favicon.ico" t="Include" />
           </e>
         </e>
+        <e p="AdvancedTodoWithWebClientAndLogin" t="IncludeRecursive">
+          <e p="_Imports.razor" t="Include" />
+          <e p="AdvancedTodoWithWebClientAndLogin.csproj" t="IncludeRecursive" />
+          <e p="App.razor" t="Include" />
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="Authorization" t="Include">
+            <e p="CustomAuthenticationStateProvider.cs" t="Include" />
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Data" t="Include">
+            <e p="CloudTodoService.cs" t="Include" />
+            <e p="ITodosService.cs" t="Include" />
+            <e p="IUserService.cs" t="Include" />
+            <e p="TodoService.cs" t="Include" />
+            <e p="UserWebService.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Todo.cs" t="Include" />
+            <e p="User.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="AdvancedTodoWithWebClientAndLogin.AssemblyInfo.cs" t="Include" />
+                <e p="AdvancedTodoWithWebClientAndLogin.RazorAssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Pages" t="Include">
+            <e p="_Host.cshtml" t="Include" />
+            <e p="AddTodo.razor" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+            <e p="Index.razor" t="Include" />
+            <e p="Login.razor" t="Include" />
+            <e p="TodoList.razor" t="Include" />
+          </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="MainLayout.razor" t="Include" />
+            <e p="NavMenu.razor" t="Include" />
+            <e p="SurveyPrompt.razor" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="wwwroot" t="Include">
+            <e p="css" t="Include">
+              <e p="bootstrap" t="Include">
+                <e p="bootstrap.min.css" t="Include" />
+                <e p="bootstrap.min.css.map" t="Include" />
+              </e>
+              <e p="open-iconic" t="Include">
+                <e p="font" t="Include">
+                  <e p="css" t="Include">
+                    <e p="open-iconic-bootstrap.min.css" t="Include" />
+                  </e>
+                  <e p="fonts" t="Include">
+                    <e p="open-iconic.eot" t="Include" />
+                    <e p="open-iconic.otf" t="Include" />
+                    <e p="open-iconic.svg" t="Include" />
+                    <e p="open-iconic.ttf" t="Include" />
+                    <e p="open-iconic.woff" t="Include" />
+                  </e>
+                </e>
+                <e p="FONT-LICENSE" t="Include" />
+                <e p="ICON-LICENSE" t="Include" />
+                <e p="README.md" t="Include" />
+              </e>
+              <e p="site.css" t="Include" />
+            </e>
+            <e p="favicon.ico" t="Include" />
+          </e>
+        </e>
         <e p="AnimLoop" t="IncludeRecursive">
           <e p="_Imports.razor" t="Include" />
           <e p="AnimLoop.csproj" t="IncludeRecursive" />
@@ -650,14 +725,18 @@
           <e p="bin" t="ExcludeRecursive" />
           <e p="Controllers" t="Include">
             <e p="TodosController.cs" t="Include" />
+            <e p="UsersController.cs" t="Include" />
             <e p="WeatherForecastController.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
+            <e p="InMemoryUserService.cs" t="Include" />
             <e p="ITodosService.cs" t="Include" />
+            <e p="IUserService.cs" t="Include" />
             <e p="TodoService.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
             <e p="Todo.cs" t="Include" />
+            <e p="User.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
