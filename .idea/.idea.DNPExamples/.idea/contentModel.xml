@@ -684,8 +684,6 @@
           </e>
           <e p="Startup.cs" t="Include" />
           <e p="Todos.db" t="Include" />
-          <e p="Todos.db-shm" t="Include" />
-          <e p="Todos.db-wal" t="Include" />
           <e p="WeatherForecast.cs" t="Include" />
         </e>
       </e>
