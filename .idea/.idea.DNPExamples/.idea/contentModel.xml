@@ -463,6 +463,14 @@
         <e p="Library" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="Library.csproj" t="IncludeRecursive" />
+          <e p="Library.db" t="Include" />
+          <e p="Library.db-shm" t="Include" />
+          <e p="Library.db-wal" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="20201101142627_InitialCreate.cs" t="Include" />
+            <e p="20201101142627_InitialCreate.Designer.cs" t="Include" />
+            <e p="LibraryContextModelSnapshot.cs" t="Include" />
+          </e>
           <e p="Models" t="Include">
             <e p="Author.cs" t="Include" />
             <e p="Book.cs" t="Include" />
@@ -474,6 +482,9 @@
                 <e p="Library.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
+          </e>
+          <e p="Persistence" t="Include">
+            <e p="LibraryContext.cs" t="Include" />
           </e>
           <e p="Program.cs" t="Include" />
         </e>
@@ -701,8 +712,6 @@
           </e>
           <e p="Startup.cs" t="Include" />
           <e p="Todos.db" t="Include" />
-          <e p="Todos.db-shm" t="Include" />
-          <e p="Todos.db-wal" t="Include" />
           <e p="WeatherForecast.cs" t="Include" />
         </e>
       </e>

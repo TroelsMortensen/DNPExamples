@@ -32,14 +32,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Some setup file changed">
-      <change afterPath="$PROJECT_DIR$/EFC/Books/Models/Author.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EFC/Books/Models/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EFC/Books/Models/Genre.cs" afterDir="false" />
+    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Adding Library example">
+      <change afterPath="$PROJECT_DIR$/EFC/Library/Persistence/LibraryContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNPExamples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DNPExamples.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/Library/Models/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/Library/Models/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/Library/Models/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/Library/Models/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/Library/Models/Genre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/Library/Models/Genre.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/Library/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/Library/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,16 +62,15 @@
     <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Blazor/FourthCoffee/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Author.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FileReadWrite/StreamReadWrite/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Book.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Program.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Data/ITodosService.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Data/TodoService.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Startup.cs" />
         <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TestController.cs" />
         <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Program.cs" />
@@ -118,6 +117,11 @@
         <option value="$PROJECT_DIR$/EFC/Books/Models/Book.cs" />
         <option value="$PROJECT_DIR$/EFC/Books/Models/Genre.cs" />
         <option value="$PROJECT_DIR$/EFC/Books/Models/Author.cs" />
+        <option value="$PROJECT_DIR$/EFC/Library/Persistence/LibraryContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/Library/Models/Book.cs" />
+        <option value="$PROJECT_DIR$/EFC/Library/Models/Genre.cs" />
+        <option value="$PROJECT_DIR$/EFC/Library/Models/Author.cs" />
+        <option value="$PROJECT_DIR$/EFC/Library/Program.cs" />
       </list>
     </option>
   </component>
@@ -140,7 +144,7 @@
     <property name="settings.editor.selected.configurable" value="http.certificates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AdvancedTodoWebAPIDB: AdvancedTodoWebAPI">
+  <component name="RunManager" selected=".NET Project.Library">
     <configuration name="AdvancedTodoWebAPI" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/bin/Debug/netcoreapp3.1/AdvancedTodoWebAPI.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -245,6 +249,24 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Library" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EFC/Library/Library.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -837,9 +859,11 @@
       <item itemvalue=".NET Project.TodoTutorial" />
       <item itemvalue=".NET Project.ViaExample" />
       <item itemvalue=".NET Project.Books" />
+      <item itemvalue=".NET Project.Library" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue=".NET Project.Library" />
         <item itemvalue=".NET Project.ViaExample" />
         <item itemvalue=".NET Project.AdvancedTodoWebAPI" />
         <item itemvalue=".NET Project.TodoTutorial" />
@@ -880,7 +904,7 @@
       <workItem from="1603377329192" duration="297000" />
       <workItem from="1603543519629" duration="4057000" />
       <workItem from="1603697753871" duration="21732000" />
-      <workItem from="1604158804581" duration="7303000" />
+      <workItem from="1604158804581" duration="10753000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>
@@ -1120,7 +1144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604221590845</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Adding Library example">
+      <created>1604240545101</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1604240545101</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1213,7 +1244,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Order page done" />
     <MESSAGE value="Sort of kind of finished with the bakery. For now" />
     <MESSAGE value="Initial commit for Advanced Todo&#10;TodoService and initial todo page created." />
     <MESSAGE value="Can now view all todos" />
@@ -1238,19 +1268,20 @@
     <MESSAGE value="Adding Todo project with database." />
     <MESSAGE value="Todo db seem to be working now." />
     <MESSAGE value="Some setup file changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some setup file changed" />
+    <MESSAGE value="Adding Library example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Library example" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="329" key="#Notifications" timestamp="1600261888302">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2508" y="329" key="#Notifications/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600261888302" />
-    <state x="3936" y="164" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604220918139">
+    <state x="3936" y="164" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604241003689">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state x="2214" y="159" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603267410149" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603988455511" />
-    <state x="3936" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604220918139" />
+    <state x="3936" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604241003689" />
     <state width="605" height="464" key="DebuggerActiveHint" timestamp="1603990012670">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -1272,7 +1303,7 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2512" y="210" key="Github.UntrackedFilesDialog/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600268381084" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1604239883592">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1604242911067">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222012" />
@@ -1286,8 +1317,8 @@
     <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.bottom/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017171" />
     <state width="1637" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604157574830" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604239883592" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1604239883591">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604242911067" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1604242911066">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
@@ -1301,8 +1332,8 @@
     <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.center/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017170" />
     <state width="1637" height="255" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604157574830" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604239883591" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1604239883591">
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604242911066" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1604242911066">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
@@ -1316,8 +1347,8 @@
     <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.left/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017170" />
     <state width="1637" height="255" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604157574830" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604239883591" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1604239883592">
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604242911066" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1604242911067">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
@@ -1331,7 +1362,7 @@
     <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.right/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017171" />
     <state width="1637" height="255" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604157574830" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604239883592" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604242911067" />
     <state width="1637" height="363" key="GridCell.Tab.1.bottom" timestamp="1604158763729">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
@@ -1444,14 +1475,14 @@
     <state x="330" y="143" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603980672743" />
     <state x="3977" y="147" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604238500310" />
     <state x="2414" y="243" key="Rider.ProjectTemplateDialog.Size/3840.0.1920.1020/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600322724966" />
-    <state x="4128" y="46" key="RiderGenerateDialog" timestamp="1604220706965">
+    <state x="4128" y="46" key="RiderGenerateDialog" timestamp="1604242435466">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state x="2382" y="45" key="RiderGenerateDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603265535392" />
     <state x="4128" y="46" key="RiderGenerateDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603306047268" />
     <state x="2382" y="45" key="RiderGenerateDialog/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600961555207" />
     <state x="352" y="30" key="RiderGenerateDialog/0.0.1280.680@0.0.1280.680" timestamp="1602144403231" />
-    <state x="4128" y="46" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604220706965" />
+    <state x="4128" y="46" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604242435466" />
     <state x="368" y="51" key="RollbackChangesDialog" timestamp="1603097723636">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -1472,7 +1503,7 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2012" y="92" width="1496" height="826" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603275402435" />
-    <state x="4094" y="223" key="Vcs.Push.Dialog.v2" timestamp="1604221617768">
+    <state x="4094" y="223" key="Vcs.Push.Dialog.v2" timestamp="1604240556909">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
     <state x="2352" y="217" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276234527" />
@@ -1481,7 +1512,7 @@
     <state x="329" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603376810333" />
     <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603543910925" />
     <state x="432" y="217" key="Vcs.Push.Dialog.v2/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1536.824@0.0.1680.1010" timestamp="1603974015655" />
-    <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604221617768" />
+    <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604240556909" />
     <state x="458" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603100566183">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

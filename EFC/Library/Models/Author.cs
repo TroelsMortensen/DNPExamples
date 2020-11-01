@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 
 namespace Library.Models
 {
@@ -12,5 +13,13 @@ namespace Library.Models
         public string LastName { get; set; }
         [StringLength(250)]
         public string Bio { get; set; }
+        
+        public override string ToString()
+        {
+            return JsonSerializer.Serialize(this, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+        }
     }
 }
