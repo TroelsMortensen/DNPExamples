@@ -27,64 +27,35 @@
     <projectFile>WebAPI/AdvancedTodoWebAPIDB/AdvancedTodoWebAPIDB.csproj</projectFile>
     <projectFile>EFC/Books/Books.csproj</projectFile>
     <projectFile>Blazor/AdvancedTodoWithWebClientAndLogin/AdvancedTodoWithWebClientAndLogin.csproj</projectFile>
+    <projectFile>EFC/OneToOne/OneToOne.csproj</projectFile>
+    <projectFile>EFC/RelationshipExamples/RelationshipExamples.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="More Library example">
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/AdvancedTodoWithWebClientAndLogin.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/App.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Authorization/CustomAuthenticationStateProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Data/CloudTodoService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Data/ITodosService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Data/IUserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Data/TodoService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Data/UserWebService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Models/Todo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/AddTodo.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/Index.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/Login.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/TodoList.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/_Host.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Shared/MainLayout.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Shared/NavMenu.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Shared/SurveyPrompt.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/_Imports.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/bootstrap/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/FONT-LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/ICON-LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/IUserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/InMemoryUserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Models/User.cs" afterDir="false" />
+    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Blazor todo, now with login, using a webservice">
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/Course.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/ManyToManyContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/Student.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/Author.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/Book.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/ManyToOneContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/Author.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/Book.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/OneToManyContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToOne/OneToOneContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToOne/ProfileInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToOne/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/RelationshipExamples.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNPExamples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DNPExamples.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/ITodosService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/ITodosService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/TodoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Data/TodoService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Models/Todo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Models/Todo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,43 +74,20 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Programme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Blazor/FourthCoffee/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Author.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FileReadWrite/StreamReadWrite/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Book.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Blazor/FourthCoffee/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Controllers/WeatherForecastController.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Controllers/TodosController.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Models/Todo.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/SqliteTodoService.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Startup.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Persistence/TodoContext.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" />
-        <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Program.cs" />
-        <option value="$PROJECT_DIR$/EFC/Books/Program.cs" />
-        <option value="$PROJECT_DIR$/EFC/Books/Models/Book.cs" />
-        <option value="$PROJECT_DIR$/EFC/Books/Models/Genre.cs" />
-        <option value="$PROJECT_DIR$/EFC/Books/Models/Author.cs" />
-        <option value="$PROJECT_DIR$/EFC/Library/Persistence/LibraryContext.cs" />
-        <option value="$PROJECT_DIR$/EFC/Library/Models/Book.cs" />
-        <option value="$PROJECT_DIR$/EFC/Library/Models/Genre.cs" />
-        <option value="$PROJECT_DIR$/EFC/Library/Models/Author.cs" />
-        <option value="$PROJECT_DIR$/EFC/Library/Program.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/AdvancedTodoWithWebClientAndLogin.csproj" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/_Imports.razor" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Program.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Startup.cs" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Models/Todo.cs" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Data/ITodosService.cs" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Program.cs" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Models/Todo.cs" />
@@ -168,6 +116,29 @@
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Shared/MainLayout.razor" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/AddTodo.razor" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Data/UserWebService.cs" />
+        <option value="$PROJECT_DIR$/EFC/OneToOne/Program.cs" />
+        <option value="$PROJECT_DIR$/EFC/OneToOne/Models/Person.cs" />
+        <option value="$PROJECT_DIR$/EFC/OneToOne/Models/Address.cs" />
+        <option value="$PROJECT_DIR$/EFC/OneToOne/Models/OneToOneContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/OneToOne/Models/ProfileInfo.cs" />
+        <option value="$PROJECT_DIR$/EFC/OneToOne/Models/User.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/OneToOne/OneToOneContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/Book.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/Author.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/OneToManyContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/Author.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/Book.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/OneToManyContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToOne/ManyToOneContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourses.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/Course.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/Student.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/ManyToManyContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourse.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/Program.cs" />
       </list>
     </option>
   </component>
@@ -317,6 +288,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="OneToOne" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EFC/OneToOne/OneToOne.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="ProtocolClient" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -344,6 +333,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Sockets/SocketProtocol/ProtocolServer/ProtocolServer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="RelationshipExamples" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EFC/RelationshipExamples/RelationshipExamples.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -938,6 +945,8 @@
       <item itemvalue=".NET Project.Library" />
       <item itemvalue=".NET Launch Settings Profile.AdvancedTodoWithWebClientAndLogin: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.AdvancedTodoWithWebClientAndLogin: AdvancedTodo" />
+      <item itemvalue=".NET Project.OneToOne" />
+      <item itemvalue=".NET Project.RelationshipExamples" />
     </list>
     <recent_temporary>
       <list>
@@ -982,7 +991,7 @@
       <workItem from="1603377329192" duration="297000" />
       <workItem from="1603543519629" duration="4057000" />
       <workItem from="1603697753871" duration="21732000" />
-      <workItem from="1604158804581" duration="14216000" />
+      <workItem from="1604158804581" duration="27998000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>
@@ -1236,7 +1245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604243872817</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Blazor todo, now with login, using a webservice">
+      <created>1604247404056</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1604247404056</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1329,7 +1345,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit for Advanced Todo&#10;TodoService and initial todo page created." />
     <MESSAGE value="Can now view all todos" />
     <MESSAGE value="Adding TODO now works" />
     <MESSAGE value="Remembering to store the IsCompleted changes. Also adding some filtering" />
@@ -1354,19 +1369,23 @@
     <MESSAGE value="Some setup file changed" />
     <MESSAGE value="Adding Library example" />
     <MESSAGE value="More Library example" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Library example" />
+    <MESSAGE value="Blazor todo, now with login, using a webservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blazor todo, now with login, using a webservice" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="329" key="#Notifications" timestamp="1600261888302">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2508" y="329" key="#Notifications/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600261888302" />
-    <state x="3936" y="164" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604241003689">
-      <screen x="3600" y="0" width="1920" height="1040" />
+    <state x="2214" y="159" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604329665222">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2214" y="159" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603267410149" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603988455511" />
+    <state x="2214" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604260880903" />
     <state x="3936" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604241003689" />
+    <state x="336" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604303412797" />
+    <state x="2214" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604329665222" />
     <state x="2515" y="208" key="#xdebugger.evaluate" timestamp="1604247169046">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
@@ -1393,7 +1412,7 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2512" y="210" key="Github.UntrackedFilesDialog/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600268381084" />
-    <state width="1637" height="264" key="GridCell.Tab.0.bottom" timestamp="1604247238313">
+    <state width="1637" height="264" key="GridCell.Tab.0.bottom" timestamp="1604258731493">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222012" />
@@ -1406,9 +1425,9 @@
     <state width="1637" height="139" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
     <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.bottom/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017171" />
-    <state width="1637" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604247238313" />
+    <state width="1637" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604258731493" />
     <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604244765487" />
-    <state width="1637" height="264" key="GridCell.Tab.0.center" timestamp="1604247238313">
+    <state width="1637" height="264" key="GridCell.Tab.0.center" timestamp="1604258731493">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
@@ -1421,9 +1440,9 @@
     <state width="1637" height="139" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
     <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.center/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017170" />
-    <state width="1637" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604247238313" />
+    <state width="1637" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604258731493" />
     <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604244765487" />
-    <state width="1637" height="264" key="GridCell.Tab.0.left" timestamp="1604247238313">
+    <state width="1637" height="264" key="GridCell.Tab.0.left" timestamp="1604258731493">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
@@ -1436,9 +1455,9 @@
     <state width="1637" height="139" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
     <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.left/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017170" />
-    <state width="1637" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604247238313" />
+    <state width="1637" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604258731493" />
     <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604244765487" />
-    <state width="1637" height="264" key="GridCell.Tab.0.right" timestamp="1604247238313">
+    <state width="1637" height="264" key="GridCell.Tab.0.right" timestamp="1604258731493">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state width="1237" height="138" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1603099222011" />
@@ -1451,7 +1470,7 @@
     <state width="1637" height="139" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603377628668" />
     <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603958294860" />
     <state width="1637" height="255" key="GridCell.Tab.0.right/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603990017171" />
-    <state width="1637" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604247238313" />
+    <state width="1637" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604258731493" />
     <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604244765487" />
     <state width="1637" height="363" key="GridCell.Tab.1.bottom" timestamp="1604247228134">
       <screen x="1920" y="0" width="1680" height="1010" />
@@ -1569,8 +1588,8 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="196" height="455" key="HiddenNamespacesPopup/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603987478482" />
-    <state x="3977" y="147" key="Rider.ProjectTemplateDialog.Size" timestamp="1604238500310">
-      <screen x="3600" y="0" width="1920" height="1040" />
+    <state x="2250" y="143" key="Rider.ProjectTemplateDialog.Size" timestamp="1604259393764">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2251" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603264276631" />
     <state x="3978" y="148" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603294453720" />
@@ -1579,9 +1598,10 @@
     <state x="252" y="97" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1602143546862" />
     <state x="302" y="117" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1603957005270" />
     <state x="330" y="143" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603980672743" />
+    <state x="2250" y="143" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604259393764" />
     <state x="3977" y="147" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604238500310" />
     <state x="2414" y="243" key="Rider.ProjectTemplateDialog.Size/3840.0.1920.1020/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600322724966" />
-    <state x="2382" y="45" key="RiderGenerateDialog" timestamp="1604245208690">
+    <state x="2382" y="45" key="RiderGenerateDialog" timestamp="1604329200934">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2382" y="45" key="RiderGenerateDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603265535392" />
@@ -1590,6 +1610,7 @@
     <state x="352" y="30" key="RiderGenerateDialog/0.0.1280.680@0.0.1280.680" timestamp="1602144403231" />
     <state x="2382" y="45" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604245208690" />
     <state x="4128" y="46" key="RiderGenerateDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604242435466" />
+    <state x="2382" y="45" key="RiderGenerateDialog/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604329200934" />
     <state x="4152" y="78" width="638" height="558" key="RollbackChangesDialog" timestamp="1604244589816">
       <screen x="3600" y="0" width="1920" height="1040" />
     </state>
@@ -1611,8 +1632,8 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2012" y="92" width="1496" height="826" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603275402435" />
-    <state x="4094" y="223" key="Vcs.Push.Dialog.v2" timestamp="1604243874354">
-      <screen x="3600" y="0" width="1920" height="1040" />
+    <state x="2352" y="217" key="Vcs.Push.Dialog.v2" timestamp="1604247405440">
+      <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2352" y="217" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276234527" />
     <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603306414427" />
@@ -1620,6 +1641,7 @@
     <state x="329" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603376810333" />
     <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603543910925" />
     <state x="432" y="217" key="Vcs.Push.Dialog.v2/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1536.824@0.0.1680.1010" timestamp="1603974015655" />
+    <state x="2352" y="217" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604247405440" />
     <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604243874354" />
     <state x="3692" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604244636157">
       <screen x="3600" y="0" width="1920" height="1040" />
