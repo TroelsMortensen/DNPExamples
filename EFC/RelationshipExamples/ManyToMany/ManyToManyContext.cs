@@ -9,7 +9,7 @@ namespace RelationshipExamples.ManyToMany
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             // name of database
-            optionsBuilder.UseSqlite(@"Data Source = ManyToMany.db");
+            optionsBuilder.UseSqlite(@"Data Source = C:\TRMO\.NET projects\DNPExamples\EFC\RelationshipExamples\ManyToMany.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

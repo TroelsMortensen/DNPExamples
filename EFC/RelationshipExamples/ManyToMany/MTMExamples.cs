@@ -1,4 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace RelationshipExamples.ManyToMany
 {
@@ -8,11 +13,66 @@ namespace RelationshipExamples.ManyToMany
         {
             using (ManyToManyContext ctx = new ManyToManyContext())
             {
-                await AddOneCourse(ctx);
+                // await AddOneStudent(ctx);
+                // await AddTwoCourses(ctx);
+                // await EnrollSteveInDNP(ctx, "IT-DNP1Y-A20");
+                // await EnrollSteveInDNP(ctx, "IT-SDJ2-A20");
+                // await WhichCoursesIsSteveEnrolledIn(ctx);
+                // await DeleteSteve(ctx);
             }
         }
 
-        private async Task AddOneCourse(ManyToManyContext ctx)
+        private async Task DeleteSteve(ManyToManyContext ctx)
+        {
+            Student steve = await ctx.Students.FirstAsync(s => s.StudentNum == 123456);
+            ctx.Students.Remove(steve);
+            await ctx.SaveChangesAsync();
+        }
+
+        private async Task WhichCoursesIsSteveEnrolledIn(ManyToManyContext ctx)
+        {
+            List<Course> courses = await ctx.Students
+                .Where(s => s.StudentNum == 123456)
+                .SelectMany(student => student.StudentCourses)
+                .Select(studentCourse => studentCourse.Course)
+                .ToListAsync();
+
+            Console.WriteLine(JsonSerializer.Serialize(courses, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            }));
+        }
+
+        private async Task EnrollSteveInDNP(ManyToManyContext ctx, string courseCode)
+        {
+            Student steve = await ctx.Students.FirstAsync(s => s.StudentNum == 123456);
+            Course dnp = await ctx.Courses.FirstAsync(c => c.CourseCode.Equals(courseCode));
+            StudentCourse sc = new StudentCourse
+            {
+                Course = dnp,
+                Student = steve
+            };
+            
+            steve.StudentCourses = new List<StudentCourse>();
+            steve.StudentCourses.Add(sc);
+            ctx.Update(steve);
+            await ctx.SaveChangesAsync();
+        }
+
+        private async Task AddOneStudent(ManyToManyContext ctx)
+        {
+            Student s = new Student
+            {
+                FirstName = "Steve",
+                LastName = "Doe",
+                Email = "123456@via.dk",
+                StudentNum = 123456
+            };
+            await ctx.Students.AddAsync(s);
+            await ctx.SaveChangesAsync();
+        }
+
+        private async Task AddTwoCourses(ManyToManyContext ctx)
         {
             Course sdj2 = new Course
             {
@@ -30,8 +90,8 @@ namespace RelationshipExamples.ManyToMany
                 CourseCode = "IT-DNP1Y-A20",
                 ECTS = 5
             };
-            ctx.Courses.Add(sdj2);
-            ctx.Courses.Add(dnp1);
+            await ctx.Courses.AddAsync(sdj2);
+            await ctx.Courses.AddAsync(dnp1);
             await ctx.SaveChangesAsync();
         }
     }

@@ -66,6 +66,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedTodoWithWebClientAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationshipExamples", "EFC\RelationshipExamples\RelationshipExamples.csproj", "{CDEE50B4-9670-4F86-8A8E-550BB49C3748}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryFamilies", "EFC\QueryFamilies\QueryFamilies.csproj", "{F89CAC58-2B3F-460F-A98C-8A47635CB52A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,7 @@ Global
 		{0F8BE279-73F7-4EC3-ABA6-CBB9DF585C42} = {159AE4B2-F9D6-4443-B19E-BE6960D13131}
 		{FBFCB688-9D3D-4C1A-935D-FC9F1C871D8B} = {61750F20-A1DA-4ABA-80E6-FA32F33907B8}
 		{CDEE50B4-9670-4F86-8A8E-550BB49C3748} = {159AE4B2-F9D6-4443-B19E-BE6960D13131}
+		{F89CAC58-2B3F-460F-A98C-8A47635CB52A} = {159AE4B2-F9D6-4443-B19E-BE6960D13131}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A6AE5465-9E04-4544-A3D6-68AE208246F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -185,5 +188,9 @@ Global
 		{CDEE50B4-9670-4F86-8A8E-550BB49C3748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDEE50B4-9670-4F86-8A8E-550BB49C3748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDEE50B4-9670-4F86-8A8E-550BB49C3748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89CAC58-2B3F-460F-A98C-8A47635CB52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89CAC58-2B3F-460F-A98C-8A47635CB52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89CAC58-2B3F-460F-A98C-8A47635CB52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89CAC58-2B3F-460F-A98C-8A47635CB52A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
