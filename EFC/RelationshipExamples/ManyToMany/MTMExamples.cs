@@ -19,7 +19,22 @@ namespace RelationshipExamples.ManyToMany
                 // await EnrollSteveInDNP(ctx, "IT-SDJ2-A20");
                 // await WhichCoursesIsSteveEnrolledIn(ctx);
                 // await DeleteSteve(ctx);
+                await UnEnrollSteveFromDNP(ctx);
             }
+        }
+
+        private async Task UnEnrollSteveFromDNP(ManyToManyContext ctx)
+        {
+            Student steve = ctx.Students.
+                Where(s => s.StudentNum == 123456).
+                Include(student => student.StudentCourses).
+                ThenInclude(studentCourse => studentCourse.Course).
+                First();
+            StudentCourse steveAndDnp = steve.
+                StudentCourses.
+                First(studentCourse => studentCourse.Course.CourseCode.Equals("IT-DNP1Y-A20"));
+            ctx.Set<StudentCourse>().Remove(steveAndDnp);
+            await ctx.SaveChangesAsync();
         }
 
         private async Task DeleteSteve(ManyToManyContext ctx)

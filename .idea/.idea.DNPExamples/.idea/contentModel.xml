@@ -585,6 +585,8 @@
             <e p="StudentCourse.cs" t="Include" />
           </e>
           <e p="ManyToMany.db" t="Include" />
+          <e p="ManyToMany.db-shm" t="Include" />
+          <e p="ManyToMany.db-wal" t="Include" />
           <e p="ManyToOne" t="Include">
             <e p="Author.cs" t="Include" />
             <e p="Book.cs" t="Include" />
