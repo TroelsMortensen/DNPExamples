@@ -535,6 +535,57 @@
       </e>
       <e p="DNPExamples.sln" t="IncludeFlat" />
       <e p="EFC" t="Include">
+        <e p="FamilyLINQTraining" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="DataAccess" t="Include">
+            <e p="FamilyContext.cs" t="Include" />
+          </e>
+          <e p="DataGeneration" t="Include">
+            <e p="DBSeeder.cs" t="Include" />
+            <e p="FamilyGenerator.cs" t="Include" />
+            <e p="StaticData" t="Include">
+              <e p="EyeColor.cs" t="Include" />
+              <e p="FemaleName.cs" t="Include" />
+              <e p="HairColor.cs" t="Include" />
+              <e p="InterestTypes.cs" t="Include" />
+              <e p="Job.cs" t="Include" />
+              <e p="LastName.cs" t="Include" />
+              <e p="MaleName.cs" t="Include" />
+              <e p="PetNames.cs" t="Include" />
+              <e p="PetSpecies.cs" t="Include" />
+              <e p="Street.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Family.db" t="Include" />
+          <e p="Family.db-shm" t="Include" />
+          <e p="Family.db-wal" t="Include" />
+          <e p="FamilyLINQTraining.csproj" t="IncludeRecursive" />
+          <e p="Migrations" t="Include">
+            <e p="20201103095700_InitialCreate.cs" t="Include" />
+            <e p="20201103095700_InitialCreate.Designer.cs" t="Include" />
+            <e p="FamilyContextModelSnapshot.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Adult.cs" t="Include" />
+            <e p="Child.cs" t="Include" />
+            <e p="ChildInterest.cs" t="Include" />
+            <e p="Family.cs" t="Include" />
+            <e p="Interest.cs" t="Include" />
+            <e p="Person.cs" t="Include" />
+            <e p="Pet.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="FamilyLINQTraining.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Program.cs" t="Include" />
+          <e p="SolutionExample" t="Include">
+            <e p="Solutions.cs" t="Include" />
+          </e>
+        </e>
         <e p="Library" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="Library.csproj" t="IncludeRecursive" />
@@ -585,8 +636,6 @@
             <e p="StudentCourse.cs" t="Include" />
           </e>
           <e p="ManyToMany.db" t="Include" />
-          <e p="ManyToMany.db-shm" t="Include" />
-          <e p="ManyToMany.db-wal" t="Include" />
           <e p="ManyToOne" t="Include">
             <e p="Author.cs" t="Include" />
             <e p="Book.cs" t="Include" />
