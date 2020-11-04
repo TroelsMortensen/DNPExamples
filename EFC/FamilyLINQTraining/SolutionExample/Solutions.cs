@@ -29,7 +29,7 @@ namespace FamilyLINQTraining.SolutionExample
                 // HowManyFamiliesHaveTwoAdultsWithSameHairColor(ctx);
                 // HowManyFamiliesHaveAChildWithAHamster(ctx);
                 // HowManyChildrenAreInterestedInBothSoccerAndBarbies(ctx);
-                // TODO noget med child pets
+                
                 // TODO HowManyUniqueHairColorsDoesAFamilyHave(ctx);
                 // TODO HowManyChildrenAreOfHeightBetween(95, 112, ctx);
                 // TODO HowManyChildrenAreObese(ctx); // BMI above 30
