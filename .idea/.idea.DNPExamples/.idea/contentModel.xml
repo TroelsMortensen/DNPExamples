@@ -614,18 +614,6 @@
           </e>
           <e p="Program.cs" t="Include" />
         </e>
-        <e p="QueryFamilies" t="IncludeRecursive">
-          <e p="bin" t="ExcludeRecursive" />
-          <e p="obj" t="ExcludeRecursive">
-            <e p="Debug" t="Include">
-              <e p="netcoreapp3.1" t="Include">
-                <e p="QueryFamilies.AssemblyInfo.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Program.cs" t="Include" />
-          <e p="QueryFamilies.csproj" t="IncludeRecursive" />
-        </e>
         <e p="RelationshipExamples" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="ManyToMany" t="Include">

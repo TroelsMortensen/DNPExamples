@@ -26,15 +26,65 @@ namespace FamilyLINQTraining.SolutionExample
                 // HowManyFamiliesHaveAChildPlaying("Soccer", ctx);
                 // HowManyFamiliesHaveAdultAndChildWithBlackHair(ctx);
                 // HowManyFamiliesHaveAChildWithBlackHairPlayingUltimate(ctx);
-                // todo HowManyFamiliesHaveTwoAdultsWithSameHairColor(ctx);
+                // HowManyFamiliesHaveTwoAdultsWithSameHairColor(ctx);
+                // HowManyFamiliesHaveAChildWithAHamster(ctx);
+                // HowManyChildrenAreInterestedInBothSoccerAndBarbies(ctx);
+                // TODO noget med child pets
                 // TODO HowManyUniqueHairColorsDoesAFamilyHave(ctx);
                 // TODO HowManyChildrenAreOfHeightBetween(95, 112, ctx);
-                // TODO HowManyChildrenAreObese(ctx); // BMI above 30 
+                // TODO HowManyChildrenAreObese(ctx); // BMI above 30
+                // TODO ListFamilyMemberByHeight(ctx);
             }
         }
 
         /**
-         * 14
+         * P
+         * 5
+         */
+        private void HowManyChildrenAreInterestedInBothSoccerAndBarbies(FamilyContext ctx)
+        {
+            var result = ctx.Families.
+                SelectMany(family => family.Children).
+                Where(child => 
+                    child.ChildInterests.Any(interest => interest.InterestId.Equals("Soccer")) && 
+                    child.ChildInterests.Any(interest => interest.InterestId.Equals("Barbie"))).
+                ToList();
+            Console.WriteLine(result.Count);
+        }
+
+        /**
+         * O
+         * 67
+         */
+        private void HowManyFamiliesHaveAChildWithAHamster(FamilyContext ctx)
+        {
+            var result = ctx.Families.
+                Where(family =>
+                family.Children.Any(child => 
+                    child.Pets.Any(pet => pet.Species.Equals("Hamster")))).
+                ToList();
+            Console.WriteLine(result.Count);
+        }
+
+        /**
+         * N
+         * 192
+         * It looks a bit iffy, to keep from calling ToList() before the end.
+         * Hint: Count() counts how many elements matches a criteria
+         */
+        private void HowManyFamiliesHaveTwoAdultsWithSameHairColor(FamilyContext ctx)
+        {
+            var result = ctx.Families.
+                Where(family => family.Adults.Count == 2 &&
+                                family.Adults.Count(adult => 
+                                    adult.HairColor.Equals(family.Adults.First().HairColor)) == 2).
+                ToList();
+            Console.WriteLine(result.Count);
+        }
+
+        /**
+         * F
+         * 10
          */
         private void HowManyFamiliesHaveCatAndDog(FamilyContext ctx)
         {
@@ -48,7 +98,8 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 53
+         * M
+         * 54
          */
         private void HowManyFamiliesHaveAChildWithBlackHairPlayingUltimate(FamilyContext ctx)
         {
@@ -64,7 +115,8 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 99 dogs
+         * E
+         * 83 dogs
          */
         private void HowManyFamiliesHaveADog(FamilyContext ctx)
         {
@@ -73,7 +125,8 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 94
+         * D
+         * 92
          */
         private void HowManyFamiliesLiveInNumberThreeOrFive(FamilyContext ctx)
         {
@@ -82,7 +135,8 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 134
+         * C
+         * 154
          */
         private void HowManyFamiliesHaveOneParent(FamilyContext ctx)
         {
@@ -93,7 +147,8 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 387
+         * L
+         * 350
          */
         private void HowManyFamiliesHaveAdultAndChildWithBlackHair(FamilyContext ctx)
         {
@@ -108,7 +163,8 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 79
+         * K
+         * 67
          */
         private void HowManyFamiliesHaveAChildPlaying(string sport, FamilyContext ctx)
         {
@@ -119,19 +175,21 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 26
+         * J
+         * 20
          */
         private void HowManyFamiliesHaveXPets(int i, FamilyContext ctx)
         {
-            var result = ctx.Families.Where(family => family.Pets.Count == 2).ToList();
+            var result = ctx.Families.Where(family => family.Pets.Count == i).ToList();
             Console.WriteLine(result.Count);
         }
 
         /**
-         * 19
+         * I
+         * 12
          * Hint: Use .Any -> it will return if any entity in a collection fulfills a condition.
          * I include Adults, so they are loaded into the end result. This is not actually necessary.
-         * It was mainly for verifycation afterwards.
+         * It was mainly for verification afterwards.
          *
          * I filter based on Where a Family's collection of Adults contains _Any_ Adult which satisfies the condition
          */
@@ -146,33 +204,61 @@ namespace FamilyLINQTraining.SolutionExample
         }
 
         /**
-         * 191
+         * H
+         * 187
          * Cannot create an appropriate Where statement. Must convert to List, and filter this one.
          * I could move the where predicate to the FindAll. But optimize but first shrinking the list with Where.
          */
         private void HowManyFamiliesHaveGayParents(FamilyContext ctx)
         {
-            List<Family> families = ctx.Families.Include(f => f.Adults).Where(family => family.Adults.Count == 2)
+            /* Less efficient alternative. I call ToList() in the middle */
+             List<Family> families1 = ctx.Families.Include(f => f.Adults).Where(family => family.Adults.Count == 2)
                 .ToList().FindAll(family => family.Adults[0].Sex.Equals(family.Adults[1].Sex));
-            Console.WriteLine(families.Count); // 191
+                
+
+            var families = ctx.Families.
+                Where(family => family.Adults.Count == 2).
+                Where(family => 
+                    family.Adults.Count(adult => 
+                        adult.Sex.Equals(family.Adults.First().Sex)) == 2).
+                ToList();
+            Console.WriteLine(families.Count); 
         }
 
+        /**
+         * G
+         * 112 (3 children families)
+         */
         private void HowManyFamiliesHaveXChildren(int i, FamilyContext ctx)
         {
             List<Family> families = ctx.Families.Where(family => family.Children.Count == i).ToList();
-            Console.WriteLine(families.Count); //122
+            Console.WriteLine(families.Count); 
         }
 
+        /**
+         * B
+         * 46
+         */
         private void HowManyFamiliesLivesInNumber(int i, FamilyContext ctx)
         {
             List<Family> families = ctx.Families.Where(f => f.HouseNumber == i).ToList();
-            Console.WriteLine(families.Count); // 47
+            Console.WriteLine(families.Count); 
         }
 
+        /**
+         * A
+         * 5
+         */
         private void HowManyFamiliesLivesAt(string street, FamilyContext ctx)
         {
             List<Family> families = ctx.Families.Where(f => f.StreetName.Equals(street)).ToList();
-            Console.WriteLine(families.Count); // 15
+            Console.WriteLine(families.Count); 
+        }
+
+        private void HowManyFamiliesLiveInNumberOne(FamilyContext ctx)
+        {
+            var result = ctx.Families.Where(family => family.HouseNumber == 1).ToList();
+            Console.WriteLine(result.Count);
         }
     }
 }
