@@ -31,6 +31,7 @@
     <projectFile>EFC/RelationshipExamples/RelationshipExamples.csproj</projectFile>
     <projectFile>EFC/QueryFamilies/QueryFamilies.csproj</projectFile>
     <projectFile>EFC/FamilyLINQTraining/FamilyLINQTraining.csproj</projectFile>
+    <projectFile>EFC/QuerySyntax/QuerySyntax.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand />
@@ -38,7 +39,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="LINQ Training.">
+      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/TestExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNPExamples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DNPExamples.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EFC/FamilyLINQTraining/SolutionExample/Solutions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/FamilyLINQTraining/SolutionExample/Solutions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourse.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/_Host.cshtml" />
-        <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Authorization/CustomAuthenticationStateProvider.cs" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/Login.razor" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Shared/MainLayout.razor" />
         <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClientAndLogin/Pages/AddTodo.razor" />
@@ -95,10 +100,8 @@
         <option value="$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" />
         <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourses.cs" />
         <option value="$PROJECT_DIR$/EFC/RelationshipExamples/Program.cs" />
-        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/ManyToManyContext.cs" />
         <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/Course.cs" />
         <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/Student.cs" />
-        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourse.cs" />
         <option value="$PROJECT_DIR$/EFC/QueryFamilies/Program.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/Models/Interest.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/Models/Adult.cs" />
@@ -118,10 +121,14 @@
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/DataAccess/FamilyContext.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/DataGeneration/DBSeeder.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/Models/ChildInterest.cs" />
-        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/DataGeneration/FamilyGenerator.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/Program.cs" />
         <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/SolutionExample/Solutions.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/ManyToManyContext.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/StudentCourse.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/OneToMany/TestExample.cs" />
+        <option value="$PROJECT_DIR$/EFC/QuerySyntax/Program.cs" />
+        <option value="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" />
       </list>
     </option>
   </component>
@@ -352,6 +359,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/EFC/QueryFamilies/QueryFamilies.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="QuerySyntax" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EFC/QuerySyntax/QuerySyntax.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -968,6 +993,7 @@
       <item itemvalue=".NET Project.RelationshipExamples" />
       <item itemvalue=".NET Project.QueryFamilies" />
       <item itemvalue=".NET Project.FamilyLINQTraining" />
+      <item itemvalue=".NET Project.QuerySyntax" />
     </list>
     <recent_temporary>
       <list>
@@ -1012,7 +1038,7 @@
       <workItem from="1603377329192" duration="297000" />
       <workItem from="1603543519629" duration="4057000" />
       <workItem from="1603697753871" duration="21732000" />
-      <workItem from="1604158804581" duration="54649000" />
+      <workItem from="1604158804581" duration="68571000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>
@@ -1308,7 +1334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604496635009</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="LINQ Training.">
+      <created>1604497926340</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1604497926340</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1433,14 +1466,14 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2508" y="329" key="#Notifications/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600261888302" />
-    <state x="2214" y="159" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604397187278">
-      <screen x="1920" y="0" width="1680" height="1010" />
+    <state x="336" y="164" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604563431582">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2214" y="159" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603267410149" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603988455511" />
     <state x="2214" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604260880903" />
     <state x="3936" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604241003689" />
-    <state x="336" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604303412797" />
+    <state x="336" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604563431582" />
     <state x="2214" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604397187278" />
     <state x="2515" y="208" key="#xdebugger.evaluate" timestamp="1604247169046">
       <screen x="1920" y="0" width="1680" height="1010" />
@@ -1656,8 +1689,8 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="196" height="455" key="HiddenNamespacesPopup/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603987478482" />
-    <state x="2250" y="143" key="Rider.ProjectTemplateDialog.Size" timestamp="1604394548648">
-      <screen x="1920" y="0" width="1680" height="1010" />
+    <state x="377" y="147" key="Rider.ProjectTemplateDialog.Size" timestamp="1604852151609">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2251" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603264276631" />
     <state x="3978" y="148" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603294453720" />
@@ -1666,8 +1699,9 @@
     <state x="252" y="97" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1602143546862" />
     <state x="302" y="117" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1603957005270" />
     <state x="330" y="143" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603980672743" />
-    <state x="2250" y="143" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604259393764" />
+    <state x="2250" y="143" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604499123712" />
     <state x="3977" y="147" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604238500310" />
+    <state x="377" y="147" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1604852151609" />
     <state x="2250" y="143" key="Rider.ProjectTemplateDialog.Size/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604394548648" />
     <state x="2414" y="243" key="Rider.ProjectTemplateDialog.Size/3840.0.1920.1020/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600322724966" />
     <state x="2382" y="45" key="RiderGenerateDialog" timestamp="1604348901113">
@@ -1702,7 +1736,7 @@
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2012" y="92" width="1496" height="826" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603275402435" />
-    <state x="2352" y="217" key="Vcs.Push.Dialog.v2" timestamp="1604496636397">
+    <state x="2352" y="217" key="Vcs.Push.Dialog.v2" timestamp="1604497930614">
       <screen x="1920" y="0" width="1680" height="1010" />
     </state>
     <state x="2352" y="217" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603276234527" />
@@ -1711,7 +1745,7 @@
     <state x="329" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603376810333" />
     <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1603543910925" />
     <state x="432" y="217" key="Vcs.Push.Dialog.v2/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1536.824@0.0.1680.1010" timestamp="1603974015655" />
-    <state x="2352" y="217" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604496636397" />
+    <state x="2352" y="217" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604497930614" />
     <state x="4094" y="223" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604243874354" />
     <state x="2352" y="217" key="Vcs.Push.Dialog.v2/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604394566366" />
     <state x="3692" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604244636157">
@@ -1728,19 +1762,20 @@
     <state x="2421" y="238" width="677" height="534" key="find.popup/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603267191102" />
     <state x="501" y="209" width="678" height="801" key="find.popup/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603988719971" />
     <state x="2421" y="122" width="748" height="888" key="find.popup/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604394923717" />
-    <state x="4167" y="240" key="run.anything.popup" timestamp="1604221038669">
-      <screen x="3600" y="0" width="1920" height="1040" />
+    <state x="567" y="240" key="run.anything.popup" timestamp="1604562519317">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2416" y="233" key="run.anything.popup/0.0.1280.680/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1603265369257" />
     <state x="2416" y="233" key="run.anything.popup/0.0.1280.680/1920.0.1680.1010@1920.0.1680.1010" timestamp="1600963013692" />
     <state x="4167" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@3600.0.1920.1040" timestamp="1604221038669" />
-    <state x="2306" y="78" width="882" height="1008" key="search.everywhere.popup" timestamp="1604496417609">
-      <screen x="1920" y="0" width="1680" height="1010" />
+    <state x="567" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604562519317" />
+    <state x="441" y="80" width="1008" height="1038" key="search.everywhere.popup" timestamp="1604912487231">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1602143736575" />
     <state x="386" y="78" width="882" height="1008" key="search.everywhere.popup/0.0.1680.1010/-1920.-16.1920.1040/-3840.-16.1920.1040@0.0.1680.1010" timestamp="1603988726167" />
     <state x="2306" y="78" width="882" height="1008" key="search.everywhere.popup/0.0.1920.1040/1920.0.1680.1010/3600.0.1920.1040@1920.0.1680.1010" timestamp="1604496417609" />
-    <state x="441" y="80" width="1008" height="1038" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604419221023" />
+    <state x="441" y="80" width="1008" height="1038" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604912487231" />
     <state x="2306" y="78" width="882" height="1008" key="search.everywhere.popup/1920.0.1680.1010/3600.0.1920.1040/0.0.1920.1040@1920.0.1680.1010" timestamp="1604398350207" />
   </component>
 </project>

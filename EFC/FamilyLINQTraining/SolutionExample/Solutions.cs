@@ -120,7 +120,9 @@ namespace FamilyLINQTraining.SolutionExample
          */
         private void HowManyFamiliesHaveADog(FamilyContext ctx)
         {
-            var result = ctx.Families.Where(family => family.Pets.Any(pet => pet.Species.Equals("Dog"))).ToList();
+            var result = ctx.Families.
+                Where(family => family.Pets.Any(pet => pet.Species.Equals("Dog"))).
+                ToList();
             Console.WriteLine(result.Count);
         }
 
@@ -130,7 +132,8 @@ namespace FamilyLINQTraining.SolutionExample
          */
         private void HowManyFamiliesLiveInNumberThreeOrFive(FamilyContext ctx)
         {
-            var result = ctx.Families.Where(family => family.HouseNumber == 3 || family.HouseNumber == 5).ToList();
+            var result = ctx.Families.
+                Where(family => family.HouseNumber == 3 || family.HouseNumber == 5).ToList();
             Console.WriteLine(result.Count);
         }
 

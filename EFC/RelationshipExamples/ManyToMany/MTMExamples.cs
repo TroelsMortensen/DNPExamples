@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,13 @@ namespace RelationshipExamples.ManyToMany
                 // await WhichCoursesIsSteveEnrolledIn(ctx);
                 // await DeleteSteve(ctx);
                 await UnEnrollSteveFromCourse(ctx);
+
+                List<Course> selectSpecific = await SelectSpecific(ctx, 
+                    course => new Course
+                {
+                    Name = course.Name
+                }
+                );
             }
         }
 
@@ -69,6 +77,8 @@ namespace RelationshipExamples.ManyToMany
             steve.StudentCourses = new List<StudentCourse>();
             steve.StudentCourses.Add(sc);
             ctx.Update(steve);
+            
+            // ctx.Set<StudentCourse>().Add(sc); This is an alternative
             await ctx.SaveChangesAsync();
         }
 
@@ -106,6 +116,12 @@ namespace RelationshipExamples.ManyToMany
             await ctx.Courses.AddAsync(sdj2);
             await ctx.Courses.AddAsync(dnp1);
             await ctx.SaveChangesAsync();
+        }
+
+        private async Task<List<Course>> SelectSpecific(ManyToManyContext ctx, Expression<Func<Course,Course>> expression)
+        {
+            List<Course> enumerable = ctx.Courses.Select(expression).ToList();
+            return enumerable;
         }
     }
 }
