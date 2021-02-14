@@ -19,7 +19,7 @@ class Program {
             
             Console.WriteLine("Client connected");
             NetworkStream stream = client.GetStream();
-            
+
             // read
             byte[] dataFromClient = new byte[1024];
             int bytesRead = stream.Read(dataFromClient, 0, dataFromClient.Length);

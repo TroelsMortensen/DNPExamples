@@ -74,11 +74,11 @@ namespace RelationshipExamples.ManyToMany
                 Student = steve
             };
             
-            steve.StudentCourses = new List<StudentCourse>();
-            steve.StudentCourses.Add(sc);
-            ctx.Update(steve);
+            // steve.StudentCourses = new List<StudentCourse>();
+            // steve.StudentCourses.Add(sc);
+            // ctx.Update(steve);
             
-            // ctx.Set<StudentCourse>().Add(sc); This is an alternative
+            ctx.Set<StudentCourse>().Add(sc); //This is an alternative
             await ctx.SaveChangesAsync();
         }
 

@@ -13,7 +13,7 @@ namespace FamilyLINQTraining.SolutionExample
         {
             using (FamilyContext ctx = new FamilyContext())
             {
-                // HowManyFamiliesLivesAt("Abby Park Street", ctx);
+                HowManyFamiliesLivesAt("Abby Park Street", ctx);
                 // HowManyFamiliesLivesInNumber(5, ctx);
                 // HowManyFamiliesHaveOneParent(ctx);
                 // HowManyFamiliesLiveInNumberThreeOrFive(ctx);
@@ -23,7 +23,7 @@ namespace FamilyLINQTraining.SolutionExample
                 // HowManyFamiliesHaveGayParents(ctx);
                 // HowManyFamiliesHaveAnAdultWithRedHair(ctx);
                 // HowManyFamiliesHaveXPets(2, ctx);
-                // HowManyFamiliesHaveAChildPlaying("Soccer", ctx);
+                HowManyFamiliesHaveAChildPlaying("Soccer", ctx);
                 // HowManyFamiliesHaveAdultAndChildWithBlackHair(ctx);
                 // HowManyFamiliesHaveAChildWithBlackHairPlayingUltimate(ctx);
                 // HowManyFamiliesHaveTwoAdultsWithSameHairColor(ctx);
@@ -228,6 +228,15 @@ namespace FamilyLINQTraining.SolutionExample
             Console.WriteLine(families.Count); 
         }
 
+    /*    private void test(FamilyContext ctx)
+        {
+            var count = ctx.Families.
+                Where(family => family.Adults.Count == 2).
+                Where(family =>
+                    family.Adults.Count(adult =>
+                        adult.Sex.Equals(family.Adults.First().Sex)) == 2).Count();
+        }*/
+        
         /**
          * G
          * 112 (3 children families)
