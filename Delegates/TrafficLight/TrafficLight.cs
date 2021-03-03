@@ -1,24 +1,29 @@
-    using System;
-    using System.Threading;
+using System;
+using System.Threading;
 
-    namespace TrafficLight {
-    public class TrafficLight {
-        
+namespace TrafficLight
+{
+    public class TrafficLight
+    {
         public Action<string> LightChange;
+        public Action<string> OnGreen;
+        public Action<string> OnLightBroken;
+        
 
         private string[] colors = {"GREEN", "YELLOW", "RED"};
 
-        public void RunTrafficLight() {
-            for (int i = 0; i < 12; i++) {
+        public void RunTrafficLight()
+        {
+            for (int i = 0; i < 12; i++)
+            {
                 int idx = i % colors.Length;
                 Console.WriteLine("Light is " + colors[idx]);
-                
-                if(LightChange != null)
+
+                if (LightChange != null)
                     LightChange(colors[idx]);
-                
+
                 Thread.Sleep(1000);
             }
         }
-        
     }
-    }
+}

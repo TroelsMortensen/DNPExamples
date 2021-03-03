@@ -33,26 +33,29 @@
     <projectFile>EFC/FamilyLINQTraining/FamilyLINQTraining.csproj</projectFile>
     <projectFile>EFC/QuerySyntax/QuerySyntax.csproj</projectFile>
     <projectFile>Delegates/Predicates/Predicates.csproj</projectFile>
+    <projectFile>Structs/BetterTime/BetterTime.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Added Select example.">
-      <change afterPath="$PROJECT_DIR$/Delegates/Predicates/BookExample/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Delegates/Predicates/BookExample/BookRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Delegates/Predicates/BookExample/RunExample.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/RecursiveManyToMany/RecursiveManyToMany.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/RecursiveManyToMany/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/RecursiveManyToMany/UserToUser.cs" afterDir="false" />
+    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Random junk">
+      <change afterPath="$PROJECT_DIR$/Delegates/Predicates/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structs/BetterTime/Time.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Structs/Time/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Authentication/CustomAuthenticationStateProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Authentication/CustomAuthenticationStateProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/LoginExample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/LoginExample.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNPExamples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DNPExamples.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFC/FamilyLINQTraining/SolutionExample/Solutions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/FamilyLINQTraining/SolutionExample/Solutions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/RelationshipExamples/ManyToMany/MTMExamples.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sockets/EchoServer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/EchoServer/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delegates/TrafficLight/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Delegates/TrafficLight/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delegates/TrafficLight/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Delegates/TrafficLight/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delegates/TrafficLight/TrafficLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Delegates/TrafficLight/TrafficLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/JSON1/MyJsonObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/JSON1/MyJsonObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/JSON1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/JSON1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Structs/Time/Time.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Structs/Time/Time.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Structs/Time/Time.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +100,19 @@
       <option value="$PROJECT_DIR$/Delegates/Predicates/BookExample/Book.cs" />
       <option value="$PROJECT_DIR$/Delegates/Predicates/BookExample/BookRepository.cs" />
       <option value="$PROJECT_DIR$/Delegates/Predicates/BookExample/RunExample.cs" />
+      <option value="$PROJECT_DIR$/Sockets/EchoClient/Program.cs" />
+      <option value="$PROJECT_DIR$/Delegates/TrafficLight/TrafficLight.cs" />
+      <option value="$PROJECT_DIR$/Delegates/TrafficLight/Program.cs" />
+      <option value="$PROJECT_DIR$/Delegates/TrafficLight/Car.cs" />
+      <option value="$PROJECT_DIR$/JSON/JSON1/MyJsonObject.cs" />
+      <option value="$PROJECT_DIR$/JSON/JSON1/Program.cs" />
+      <option value="$PROJECT_DIR$/Structs/Time/Time.cs" />
+      <option value="$PROJECT_DIR$/Structs/Time/Time.csproj" />
+      <option value="$PROJECT_DIR$/Structs/Time/Program.cs" />
+      <option value="$PROJECT_DIR$/Structs/BetterTime/Program.cs" />
+      <option value="$PROJECT_DIR$/Structs/BetterTime/Time.cs" />
+      <option value="$PROJECT_DIR$/Blazor/LoginExample/LoginExample.csproj" />
+      <option value="$PROJECT_DIR$/Blazor/LoginExample/Authentication/CustomAuthenticationStateProvider.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1h02rwLBh1h4hcEvDkMbovvkFgP" />
@@ -115,10 +131,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.FamilyLINQTraining">
+  <component name="RunManager" selected=".NET Launch Settings Profile.LoginExample">
     <configuration name="AdvancedTodoWebAPI" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/bin/Debug/netcoreapp3.1/AdvancedTodoWebAPI.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -133,6 +149,24 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="BetterTime" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Structs/BetterTime/BetterTime.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -975,11 +1009,12 @@
       <item itemvalue=".NET Project.QueryFamilies" />
       <item itemvalue=".NET Project.FamilyLINQTraining" />
       <item itemvalue=".NET Project.QuerySyntax" />
+      <item itemvalue=".NET Project.Predicates" />
+      <item itemvalue=".NET Project.BetterTime" />
       <item itemvalue=".NET Project.AdvancedTodoWebAPI" />
       <item itemvalue=".NET Project.TodoTutorial" />
       <item itemvalue=".NET Project.ViaExample" />
       <item itemvalue=".NET Project.Library" />
-      <item itemvalue=".NET Project.Predicates" />
     </list>
     <recent_temporary>
       <list>
@@ -1033,7 +1068,9 @@
       <workItem from="1607941132606" duration="3754000" />
       <workItem from="1607963648559" duration="1207000" />
       <workItem from="1609237897574" duration="1474000" />
-      <workItem from="1613297501179" duration="1122000" />
+      <workItem from="1613297501179" duration="2480000" />
+      <workItem from="1613376736213" duration="10246000" />
+      <workItem from="1614772322250" duration="267000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>
@@ -1343,7 +1380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604949536971</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Random junk">
+      <created>1613298641828</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1613298641828</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1436,7 +1480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Can now filter by IsCompleted" />
     <MESSAGE value="Login example" />
     <MESSAGE value="minor changes" />
     <MESSAGE value=".." />
@@ -1461,6 +1504,7 @@
     <MESSAGE value="Relationship examples, more, a little more." />
     <MESSAGE value="LINQ Training." />
     <MESSAGE value="Added Select example." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Select example." />
+    <MESSAGE value="Random junk" />
+    <option name="LAST_COMMIT_MESSAGE" value="Random junk" />
   </component>
 </project>

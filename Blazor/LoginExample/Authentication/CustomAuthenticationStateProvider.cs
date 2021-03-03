@@ -25,9 +25,8 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider {
         if (cachedUser == null) {
             string userAsJson = await jsRuntime.InvokeAsync<string>("sessionStorage.getItem", "currentUser");
             if (!string.IsNullOrEmpty(userAsJson)) {
-                cachedUser = JsonSerializer.Deserialize<User>(userAsJson);
-
-                identity = SetupClaimsForUser(cachedUser);
+                User tmp = JsonSerializer.Deserialize<User>(userAsJson);
+                ValidateLogin(tmp.UserName, tmp.Password);
             }
         } else {
             identity = SetupClaimsForUser(cachedUser);

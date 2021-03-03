@@ -6,15 +6,16 @@ namespace JSON1 {
     class Program {
         static void Main(string[] args) {
             MyJsonObject mjo = new MyJsonObject {
-                b = true,
-                number = 42,
-                text = "thismytext",
-                manyStrings = new[] {"this", "my", "text"},
-                thisIsIgnored = "youll never see this"
+                B = true,
+                Number = 42,
+                Text = "thismytext",
+                ManyStrings = new[] {"this", "my", "text"},
+                ThisIsIgnored = "youll never see this"
             };
 
             string jsonFormatted = JsonSerializer.Serialize(mjo, new JsonSerializerOptions {
-                WriteIndented = true
+                WriteIndented = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             });
 
             Console.WriteLine(jsonFormatted);

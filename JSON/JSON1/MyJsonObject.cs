@@ -3,13 +3,13 @@ using System.Text.Json.Serialization;
 namespace JSON1 {
 
     public class MyJsonObject {
-        public int number { get; set; }
-        public string text { get; set; }
-        public string[] manyStrings { get; set; }
-        public bool b { get; set; }
+        public int Number { get; set; }
+        public string Text { get; set; }
+        public string[] ManyStrings { get; set; }
+        public bool B { get; set; }
         
         [JsonIgnore]
-        public string thisIsIgnored { get; set; }
+        public string ThisIsIgnored { get; set; }
     }
 
 }
