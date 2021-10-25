@@ -15,15 +15,20 @@
         <option>True</option>
     </select>
 </p>
-@if (todosToShow == null) {
+@if (todosToShow == null)
+{
     <p>
         <em>Loading...</em>
     </p>
-} else if (!todosToShow.Any()) {
+}
+else if (!todosToShow.Any())
+{
     <p>
         <em>No ToDo items exist. Please add some.</em>
     </p>
-} else {
+}
+else
+{
     <table class="table">
         <thead>
         <tr>
@@ -35,7 +40,8 @@
         </tr>
         </thead>
         <tbody>
-        @foreach (var item in todosToShow) {
+        @foreach (var item in todosToShow)
+        {
             <tr>
                 <td>@item.UserId</td>
                 <td>@item.TodoId</td>
@@ -61,43 +67,79 @@
     private int? filterById;
     private bool? filterByIsCompleted;
 
-    private void FilterByUserId(ChangeEventArgs changeEventArgs) {
+    private void FilterByUserId(ChangeEventArgs changeEventArgs)
+    {
         filterById = null;
-        try {
+        try
+        {
             filterById = int.Parse(changeEventArgs.Value.ToString());
-        } catch (Exception e) { }
+        }
+        catch (Exception e)
+        {
+        }
         ExecuteFilter();
     }
 
-    private void FilterByCompletedStatus(ChangeEventArgs args) {
+    private void FilterByCompletedStatus(ChangeEventArgs args)
+    {
         filterByIsCompleted = null;
-        try {
+        try
+        {
             filterByIsCompleted = bool.Parse(args.Value.ToString());
-        } catch (Exception e) { }
+        }
+        catch (Exception e)
+        {
+        }
         ExecuteFilter();
     }
 
-    private void ExecuteFilter() {
-        todosToShow = allTodos.Where(t => 
+    private void ExecuteFilter()
+    {
+        todosToShow = allTodos.Where(t =>
             (filterById != null && t.UserId == filterById || filterById == null) &&
             (filterByIsCompleted != null && t.IsCompleted == filterByIsCompleted || filterByIsCompleted == null)
-        ).ToList();
+            ).ToList();
     }
 
-    protected override async Task OnInitializedAsync() {
-        allTodos = await TodosService.GetTodosAsync();
-        todosToShow = allTodos;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            allTodos = await TodosService.GetTodosAsync();
+            todosToShow = allTodos;
+        }
+        catch (Exception e)
+        {
+    // update some error label here, or show popup..
+        }
     }
 
-    private async Task RemoveTodo(int todoId) {
+    private async Task RemoveTodo(int todoId)
+    {
         Todo todoToRemove = todosToShow.First(t => t.TodoId == todoId);
-        await TodosService.RemoveTodoAsync(todoId);
-        todosToShow.Remove(todoToRemove);
+        try
+        {
+            await TodosService.RemoveTodoAsync(todoId);
+            todosToShow.Remove(todoToRemove);
+        }
+        catch (Exception e)
+        {
+    // update some error label here, or show popup..
+        }
     }
 
-    private async Task CompletedChange(ChangeEventArgs evt, Todo todo) {
+    private async Task CompletedChange(ChangeEventArgs evt, Todo todo)
+    {
         todo.IsCompleted = (bool) evt.Value;
-        await TodosService.UpdateAsync(todo);
+
+        try
+        {
+            await TodosService.UpdateAsync(todo);
+        }
+        catch (Exception e)
+        {
+    // update some error label here, or show popup..
+        }
     }
 
 }

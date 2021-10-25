@@ -16,13 +16,10 @@
             <input type="password" placeholder="password" @bind-value="password"/>
         </div>
         <div style="color:red">@errorMessage</div>
-
-        <a href="" @onclick="PerformLogin">
-            Login
-        </a>
+        <button @onclick="PerformLogin">Other login</button>
     </NotAuthorized>
     <Authorized>
-        <a href="" @onclick="PerformLogout">
+        <a  @onclick="PerformLogout">
             Log out
         </a>
     </Authorized>
@@ -50,7 +47,7 @@
         password = "";
         try {
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
-            NavigationManager.NavigateTo("/");
+            //NavigationManager.NavigateTo("/");
         } catch (Exception e) { }
     }
 

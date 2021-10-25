@@ -6,7 +6,7 @@
 
 <h3>AddTodo</h3>
 
-<EditForm Model="@newTodoItem" OnValidSubmit="@AddNewTodoAsync">
+<EditForm Model="@newTodoItem" OnValidSubmit="@AddNewTodoAsync" Context="OtherContext">
     <DataAnnotationsValidator/>
     <ValidationSummary/>
     <div class="form-group">

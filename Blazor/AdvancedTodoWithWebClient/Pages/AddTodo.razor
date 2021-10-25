@@ -26,8 +26,15 @@
     private Todo newTodoItem = new Todo();
 
     private async Task AddNewTodoAsync() {
-        await TodosService.AddTodoAsync(newTodoItem);
-        NavigationManager.NavigateTo("/Todos");
+        try
+        {
+            await TodosService.AddTodoAsync(newTodoItem);
+            NavigationManager.NavigateTo("/Todos");
+        }
+        catch (Exception e)
+        {
+    // update some error label here, or show popup..
+        }
     }
 
 }

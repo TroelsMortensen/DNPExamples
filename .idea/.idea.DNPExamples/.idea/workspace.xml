@@ -40,22 +40,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="Random junk">
-      <change afterPath="$PROJECT_DIR$/Delegates/Predicates/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Structs/BetterTime/Time.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Structs/Time/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Authentication/CustomAuthenticationStateProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Authentication/CustomAuthenticationStateProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/LoginExample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/LoginExample.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNPExamples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DNPExamples.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delegates/TrafficLight/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Delegates/TrafficLight/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delegates/TrafficLight/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Delegates/TrafficLight/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Delegates/TrafficLight/TrafficLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Delegates/TrafficLight/TrafficLight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/JSON1/MyJsonObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/JSON1/MyJsonObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/JSON1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/JSON1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Structs/Time/Time.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Structs/Time/Time.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Structs/Time/Time.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/AddTodo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/AddTodo.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Pages/Login.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Pages/SecurityLevel.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Pages/SecurityLevel.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,17 +83,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Programme.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive - ViaUC/Courses/DNP/21A/Assignment 1/Part 1/Code/Persistence/FileContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FileReadWrite/StreamReadWrite/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Author.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Book.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Programme.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Blazor/FourthCoffee/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Courses/SEP3/20A/Y/Group (5) - Bogdan, Daria, Natali, Mihai/Appendix material/SEP3 - Appendices/SOURCE CODE/SEP3-master-final/SEP3/Data/CloudUserService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Book.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Author.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA730875-C268-4E5B-BBE0-2068E3D74462/13/IJSRuntime.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -113,6 +113,20 @@
       <option value="$PROJECT_DIR$/Structs/BetterTime/Time.cs" />
       <option value="$PROJECT_DIR$/Blazor/LoginExample/LoginExample.csproj" />
       <option value="$PROJECT_DIR$/Blazor/LoginExample/Authentication/CustomAuthenticationStateProvider.cs" />
+      <option value="$PROJECT_DIR$/Blazor/LoginExample/Startup.cs" />
+      <option value="$USER_HOME$/OneDrive - ViaUC/Courses/DNP/21A/Assignment 1/Code/Persistence/FileContext.cs" />
+      <option value="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" />
+      <option value="$PROJECT_DIR$/Blazor/LoginExample/Pages/SecurityLevel.razor" />
+      <option value="$PROJECT_DIR$/Blazor/LoginExample/Pages/Login.razor" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Properties/launchSettings.json" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" />
+      <option value="$USER_HOME$/OneDrive - ViaUC/Courses/DNP/21A/Assignment 1/Part 1/Code/Persistence/FileContext.cs" />
+      <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Startup.cs" />
+      <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" />
+      <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" />
+      <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/AddTodo.razor" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1h02rwLBh1h4hcEvDkMbovvkFgP" />
@@ -127,14 +141,16 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.LoginExample">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AdvancedTodoWebAPI">
     <configuration name="AdvancedTodoWebAPI" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/bin/Debug/netcoreapp3.1/AdvancedTodoWebAPI.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -1071,6 +1087,13 @@
       <workItem from="1613297501179" duration="2480000" />
       <workItem from="1613376736213" duration="10246000" />
       <workItem from="1614772322250" duration="267000" />
+      <workItem from="1632722601101" duration="8652000" />
+      <workItem from="1633083789674" duration="2041000" />
+      <workItem from="1633430816473" duration="56000" />
+      <workItem from="1633597110895" duration="4253000" />
+      <workItem from="1633933324305" duration="9196000" />
+      <workItem from="1634116589832" duration="714000" />
+      <workItem from="1635142907279" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>

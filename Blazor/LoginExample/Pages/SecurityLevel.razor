@@ -1,10 +1,10 @@
 @page "/Security"
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
-<AuthorizeView>
-    <h3>Hello @context.User.Identity.Name</h3>
+<AuthorizeView Context="AVContext">
+    <h3>Hello @AVContext.User.Identity.Name</h3>
 
-    <h5>Your security level is @context.User.FindFirst(claim => claim.Type.Equals("Level")).Value</h5>
+    <h5>Your security level is @AVContext.User.FindFirst(claim => claim.Type.Equals("Level")).Value</h5>
 </AuthorizeView>
 
 
