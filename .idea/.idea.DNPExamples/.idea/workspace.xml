@@ -34,6 +34,8 @@
     <projectFile>EFC/QuerySyntax/QuerySyntax.csproj</projectFile>
     <projectFile>Delegates/Predicates/Predicates.csproj</projectFile>
     <projectFile>Structs/BetterTime/BetterTime.csproj</projectFile>
+    <projectFile>Basics/Basics.csproj</projectFile>
+    <projectFile>Delegates/DoctorsWaitingRoom/DoctorsWaitingRoom.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand />
@@ -41,22 +43,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1441be50-cf96-4021-9dc8-1494010772f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delegates/DoctorsWaitingRoom/DoctorsWaitingRoom.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delegates/DoctorsWaitingRoom/Patient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delegates/DoctorsWaitingRoom/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Delegates/DoctorsWaitingRoom/WaitingRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/TodoDbSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DNPExamples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DNPExamples/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodo/Pages/AddTodo.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/AddTodo.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/AddTodo.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Pages/Login.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Pages/SecurityLevel.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Pages/SecurityLevel.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blazor/LoginExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Blazor/LoginExample/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/AdvancedTodoWebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Controllers/TodosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNPExamples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DNPExamples.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/FamilyLINQTraining/DataAccess/FamilyContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/FamilyLINQTraining/DataAccess/FamilyContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EFC/ViaExample/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EFC/ViaExample/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/JSON1/JSON1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/JSON1/JSON1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON/JSON1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/JSON1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REST/TodoClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/REST/TodoClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/EchoClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/EchoClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/EchoServer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/EchoServer/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Controllers/TodosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Controllers/TodosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/ITodosService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/ITodosService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/SqliteTodoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/SqliteTodoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/TodoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/TodoService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,16 +88,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/OneDrive - ViaUC/Courses/DNP/21A/Assignment 1/Part 1/Code/Persistence/FileContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FileReadWrite/StreamReadWrite/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/Library/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Author.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Genre.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EFC/Library/Models/Book.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Programme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Course.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FileReadWrite/StreamReadWrite/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive - ViaUC/Courses/DNP/21A/Assignment 1/Part 1/Code/Persistence/FileContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Blazor/FourthCoffee/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EFC/Library/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EFC/ViaExample/Models/Programme.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -100,12 +105,10 @@
       <option value="$PROJECT_DIR$/Delegates/Predicates/BookExample/Book.cs" />
       <option value="$PROJECT_DIR$/Delegates/Predicates/BookExample/BookRepository.cs" />
       <option value="$PROJECT_DIR$/Delegates/Predicates/BookExample/RunExample.cs" />
-      <option value="$PROJECT_DIR$/Sockets/EchoClient/Program.cs" />
       <option value="$PROJECT_DIR$/Delegates/TrafficLight/TrafficLight.cs" />
       <option value="$PROJECT_DIR$/Delegates/TrafficLight/Program.cs" />
       <option value="$PROJECT_DIR$/Delegates/TrafficLight/Car.cs" />
       <option value="$PROJECT_DIR$/JSON/JSON1/MyJsonObject.cs" />
-      <option value="$PROJECT_DIR$/JSON/JSON1/Program.cs" />
       <option value="$PROJECT_DIR$/Structs/Time/Time.cs" />
       <option value="$PROJECT_DIR$/Structs/Time/Time.csproj" />
       <option value="$PROJECT_DIR$/Structs/Time/Program.cs" />
@@ -126,8 +129,26 @@
       <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Startup.cs" />
       <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Data/CloudTodoService.cs" />
       <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/TodoList.razor" />
+      <option value="$PROJECT_DIR$/JSON/JSON1/JSON1.csproj" />
+      <option value="$PROJECT_DIR$/JSON/JSON1/Program.cs" />
       <option value="$PROJECT_DIR$/Blazor/AdvancedTodoWithWebClient/Pages/AddTodo.razor" />
+      <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/SolutionExample/Solutions.cs" />
+      <option value="$PROJECT_DIR$/EFC/FamilyLINQTraining/DataAccess/FamilyContext.cs" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Controllers/TodosController.cs" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/ITodosService.cs" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/SqliteTodoService.cs" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/TodoService.cs" />
+      <option value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPIDB/Data/TodoDbSet.cs" />
+      <option value="$PROJECT_DIR$/Sockets/EchoServer/Program.cs" />
+      <option value="$PROJECT_DIR$/Sockets/EchoClient/Program.cs" />
+      <option value="$PROJECT_DIR$/Basics/Program.cs" />
     </changedPaths>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="1h02rwLBh1h4hcEvDkMbovvkFgP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -150,7 +171,7 @@
     <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AdvancedTodoWebAPI">
+  <component name="RunManager" selected=".NET Project.DoctorsWaitingRoom">
     <configuration name="AdvancedTodoWebAPI" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/WebAPI/AdvancedTodoWebAPI/bin/Debug/netcoreapp3.1/AdvancedTodoWebAPI.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -165,6 +186,24 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Basics" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Basics/Basics.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -214,6 +253,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/FileReadWrite/StreamReadWrite/StreamReadWrite.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="DoctorsWaitingRoom" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Delegates/DoctorsWaitingRoom/DoctorsWaitingRoom.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -1027,10 +1084,12 @@
       <item itemvalue=".NET Project.QuerySyntax" />
       <item itemvalue=".NET Project.Predicates" />
       <item itemvalue=".NET Project.BetterTime" />
+      <item itemvalue=".NET Project.Basics" />
       <item itemvalue=".NET Project.AdvancedTodoWebAPI" />
       <item itemvalue=".NET Project.TodoTutorial" />
       <item itemvalue=".NET Project.ViaExample" />
       <item itemvalue=".NET Project.Library" />
+      <item itemvalue=".NET Project.DoctorsWaitingRoom" />
     </list>
     <recent_temporary>
       <list>
@@ -1093,7 +1152,17 @@
       <workItem from="1633597110895" duration="4253000" />
       <workItem from="1633933324305" duration="9196000" />
       <workItem from="1634116589832" duration="714000" />
-      <workItem from="1635142907279" duration="3291000" />
+      <workItem from="1635142907279" duration="9127000" />
+      <workItem from="1635749719369" duration="856000" />
+      <workItem from="1635760999705" duration="1726000" />
+      <workItem from="1635852627170" duration="2097000" />
+      <workItem from="1635930249732" duration="1858000" />
+      <workItem from="1636103947937" duration="1118000" />
+      <workItem from="1636290434952" duration="1776000" />
+      <workItem from="1638112568818" duration="6845000" />
+      <workItem from="1641552434152" duration="1516000" />
+      <workItem from="1645455487991" duration="1263000" />
+      <workItem from="1645698879102" duration="1465000" />
     </task>
     <task id="LOCAL-00001" summary="Adding .csproj files">
       <created>1600268550234</created>
@@ -1410,12 +1479,20 @@
       <option name="project" value="LOCAL" />
       <updated>1613298641828</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="changing todo example to handle errors slightly better">
+      <created>1635157451663</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1635157451663</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -1499,11 +1576,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Login example" />
     <MESSAGE value="minor changes" />
     <MESSAGE value=".." />
     <MESSAGE value="Adding animation example" />
@@ -1528,6 +1603,7 @@
     <MESSAGE value="LINQ Training." />
     <MESSAGE value="Added Select example." />
     <MESSAGE value="Random junk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Random junk" />
+    <MESSAGE value="changing todo example to handle errors slightly better" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing todo example to handle errors slightly better" />
   </component>
 </project>

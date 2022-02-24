@@ -19,7 +19,7 @@ public class TodosController : ControllerBase {
     public async Task<ActionResult<IList<Todo>>> 
         GetTodos([FromQuery] int? userId, [FromQuery] bool? isCompleted) {
         try {
-            IList<Todo> todos = await todosService.GetTodosAsync();
+            IList<Todo> todos = await todosService.GetTodosAsync(userId, isCompleted);
             return Ok(todos);
         } catch (Exception e) {
             Console.WriteLine(e);

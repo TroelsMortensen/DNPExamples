@@ -1,6 +1,7 @@
 @page "/AddTodo"
 @using AdvancedTodo.Models
 @using AdvancedTodo.Data
+@using System.Text.Json
 @inject ITodosService TodosService
 @inject NavigationManager NavigationManager
 
@@ -21,10 +22,13 @@
         <button class="btn btn-outline-dark" type="submit">Create</button>
     </p>
 </EditForm>
+<label>
+    @errorLabel
+</label>
 
 @code {
     private Todo newTodoItem = new Todo();
-
+    private string errorLabel;
     private async Task AddNewTodoAsync() {
         try
         {
@@ -33,7 +37,7 @@
         }
         catch (Exception e)
         {
-    // update some error label here, or show popup..
+            errorLabel = "lol fail";
         }
     }
 

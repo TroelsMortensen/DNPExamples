@@ -18,11 +18,6 @@ namespace AdvancedTodoWebAPIDB.Data
             this.ctx = ctx;
         }
 
-        public async Task<IList<Todo>> GetTodosAsync()
-        {
-            return await ctx.Todos.ToListAsync();
-        }
-
         public async Task<Todo> AddTodoAsync(Todo todo)
         {
             EntityEntry<Todo> newlyAdded = await ctx.Todos.AddAsync(todo);
@@ -54,6 +49,22 @@ namespace AdvancedTodoWebAPIDB.Data
             {
                 throw new Exception($"Did not find todo with id{todo.TodoId}");
             }
+        }
+
+        public async Task<IList<Todo>> GetTodosAsync(int? userId, bool? isCompleted)
+        {
+            IQueryable<Todo> asQueryable = ctx.Todos.AsQueryable();
+            if (userId != null)
+            {
+                asQueryable = asQueryable.Where(todo => todo.UserId == userId);
+            }
+
+            if (isCompleted != null)
+            {
+                asQueryable = asQueryable.Where(todo => todo.IsCompleted == isCompleted);
+            }
+            
+            return await asQueryable.ToListAsync();
         }
     }
 }

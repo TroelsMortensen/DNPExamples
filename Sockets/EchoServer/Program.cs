@@ -14,26 +14,28 @@ class Program {
 
         Console.WriteLine("Server started..");
 
-        while (true) {
-            TcpClient client = listener.AcceptTcpClient();
-            
-            Console.WriteLine("Client connected");
-            NetworkStream stream = client.GetStream();
-
-            // read
-            byte[] dataFromClient = new byte[1024];
-            int bytesRead = stream.Read(dataFromClient, 0, dataFromClient.Length);
-            string s = Encoding.ASCII.GetString(dataFromClient, 0, bytesRead);
-            Console.WriteLine(s);
-            
-            // respond
-            byte[] dataToClient = Encoding.ASCII.GetBytes($"Returning {s}");
-            stream.Write(dataToClient, 0, dataToClient.Length);
-            
-            // close connection
-            client.Close();
-            
+        while (true)
+        {
+            HandleOneClient(listener);
         }
+    }
+
+    private static void HandleOneClient(TcpListener listener)
+    {
+        using TcpClient client = listener.AcceptTcpClient();
+
+        Console.WriteLine("Client connected");
+        NetworkStream stream = client.GetStream();
+
+        // read
+        byte[] dataFromClient = new byte[1024];
+        int bytesRead = stream.Read(dataFromClient, 0, dataFromClient.Length);
+        string s = Encoding.ASCII.GetString(dataFromClient, 0, bytesRead);
+        Console.WriteLine(s);
+
+        // respond
+        byte[] dataToClient = Encoding.ASCII.GetBytes($"Returning {s}");
+        stream.Write(dataToClient, 0, dataToClient.Length);
     }
 }
 }

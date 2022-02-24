@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using ViaExample.DataAccess;
 using ViaExample.Models;
 
@@ -24,7 +25,7 @@ namespace ViaExample
             {
                 var subTypes = dbContext.Courses.Select(c => new
                 {
-                    Name = c. Name,
+                    Name = c.Name,
                     Semester = c.Semester
                 });
                 var list = subTypes.ToList();
@@ -40,11 +41,10 @@ namespace ViaExample
             using (ViaDBContext dbContext = new ViaDBContext())
             {
                 IQueryable<Course> result = dbContext.Courses.Where(c => c.Id.Equals("DNP1"));
-                
+
                 Course dnp = await dbContext.Courses.FirstAsync(c => c.Id.Equals("DNP1"));
-                Programme softwareProgramme = await dbContext.Programmes.
-                    Include(p => p.Courses).
-                    FirstAsync(p => p.ShortName.Equals("Software"));
+                Programme softwareProgramme =
+                    await dbContext.Programmes.Include(p => p.Courses).FirstAsync(p => p.ShortName.Equals("Software"));
                 softwareProgramme.Courses.Add(dnp);
                 dbContext.Update(softwareProgramme);
                 await dbContext.SaveChangesAsync();
@@ -69,7 +69,7 @@ namespace ViaExample
                 IsElective = true,
                 ECTS = 5
             };
-            List<Course> courses = new List<Course> {GMD, SDJ2};
+            List<Course> courses = new List<Course> { GMD, SDJ2 };
             Programme software = new Programme
             {
                 Location = "Horsens",
@@ -97,11 +97,10 @@ namespace ViaExample
                 ECTS = 5
             };
 
-            using (ViaDBContext dbContext = new ViaDBContext())
-            {
-                await dbContext.Courses.AddAsync(dnp1);
-                await dbContext.SaveChangesAsync();
-            }
+            using ViaDBContext dbContext = new ViaDBContext();
+            EntityEntry<Course> entry = await dbContext.Courses.AddAsync(dnp1);
+            Course entryEntity = entry.Entity;
+            await dbContext.SaveChangesAsync();
         }
     }
 }

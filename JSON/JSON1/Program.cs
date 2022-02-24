@@ -4,8 +4,18 @@ using System.Threading;
 
 namespace JSON1 {
     class Program {
-        static void Main(string[] args) {
-            MyJsonObject mjo = new MyJsonObject {
+        static void Main(string[] args)
+        {
+            int s = 1;
+            var serialize = JsonSerializer.Serialize(s);
+            Console.WriteLine(serialize);
+            // Test1();
+        }
+
+        private static void Test1()
+        {
+            MyJsonObject mjo = new MyJsonObject
+            {
                 B = true,
                 Number = 42,
                 Text = "thismytext",
@@ -13,7 +23,8 @@ namespace JSON1 {
                 ThisIsIgnored = "youll never see this"
             };
 
-            string jsonFormatted = JsonSerializer.Serialize(mjo, new JsonSerializerOptions {
+            string jsonFormatted = JsonSerializer.Serialize(mjo, new JsonSerializerOptions
+            {
                 WriteIndented = true,
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             });

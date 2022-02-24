@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Models;
@@ -8,7 +9,6 @@ namespace FamilyLINQTraining.DataAccess
     {
         // Defining various tables
         public DbSet<Family> Families { get; set; }
-
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

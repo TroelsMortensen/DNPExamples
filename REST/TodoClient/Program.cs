@@ -22,8 +22,11 @@ class Program {
        //Console.WriteLine(result);
     }
 
-    private async Task GetData() {
-        HttpClient client = new HttpClient();
+    private async Task GetData()
+    {
+        HttpClientHandler hch = new HttpClientHandler();
+        hch.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+        HttpClient client = new HttpClient(hch);
         string stringAsync = await client.GetStringAsync("https://jsonplaceholder.typicode.com/todos");
         Console.WriteLine(stringAsync);
     }

@@ -49,6 +49,11 @@ public class TodoService : ITodosService {
         return toUpdate;
     }
 
+    public Task<IList<Todo>> GetTodosAsync(int? userId, bool? isCompleted)
+    {
+        return GetTodosAsync();
+    }
+
     private void WriteTodosToFile() {
         string productsAsJson = JsonSerializer.Serialize(todos);
         
